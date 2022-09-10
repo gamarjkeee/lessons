@@ -1,0 +1,78 @@
+/* Селектор зірочка  */
+
+* {
+  color: #000000;
+}
+
+/* Тип №1. Селектор тегу */
+
+h1 {
+  color: #0000ff;
+}
+
+/* Тип №2. Селектор класу */
+
+.menu-header__link {
+  color: #dc143c;
+}
+
+/* Тип №3. Селектор ID */
+
+#social {
+  color: #40e0d0;
+}
+
+/* КОМБІНАЦІЇ СЕЛЕКТОРІВ */
+
+div .footer__title {
+  color: #4682b4;
+}
+
+.buttons-sets-page__button.button-sets-page-first {
+  color: #f4a460;
+}
+.buttons-sets-page__button.button-sets-page-second {
+  color: #9400d3;
+}
+
+.social-footer__item,
+.social-footer__item span {
+  color: #00fa9a;
+}
+
+.gunkan-page__information > p {
+  color: #778899;
+}
+
+.sets-page__subtitle ~ p {
+  color: #20b2aa;
+}
+
+.rolls-page__subtitle + p {
+  color: #ff69b4;
+}
+
+.footer__list * {
+  color: #a0522d;
+}
+
+.button-gunkan-page-first,
+.button-rolls-page-first {
+  color: #f4a460;
+}
+
+.button-gunkan-page-second,
+.button-rolls-page-second {
+  color: #9400d3;
+}
+
+.name {
+  color: #4b0082;
+}
+
+.link-header__list li {
+  color: #00ff00;
+}
+.link-header__list a {
+  color: #006400;
+}
