@@ -1,0 +1,1022 @@
+<!DOCTYPE html>
+<html lang="uk">
+  <head>
+    <link
+      href="https://fonts.googleapis.com/css?family=Roboto:100,100italic,300,300italic,regular,italic,500,500italic,700,700italic,900,900italic&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/style.css" />
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0"
+    />
+    <title>lesson_04 homework</title>
+  </head>
+  <body>
+    <div class="wrapper">
+      <header id="header" class="header">
+        <div class="header__container">
+          <a target="_blank" href="https://www.imdb.com/" class="header__logo">
+            <img src="img/logo.png" alt="Logo IMDb" />
+          </a>
+          <nav class="header__menu">
+            <ul class="header__list">
+              <li class="header__item">
+                <a href="#header" class="header__link">Головна сторінка</a>
+              </li>
+              <li class="header__item">
+                <a href="#thriller" class="header__link">триллер / бойовик</a>
+              </li>
+              <li class="header__item">
+                <a href="#drama" class="header__link">драма / мелодрама</a>
+              </li>
+              <li class="header__item">
+                <a href="#fantasy" class="header__link">фантастика / пригоди</a>
+              </li>
+            </ul>
+          </nav>
+        </div>
+      </header>
+      <main class="page">
+        <section class="page__information information">
+          <div class="information__container">
+            <h1
+              style="font-weight: 900; font-family: Roboto"
+              class="information__title title"
+            >
+              Мої топ-15 улюблених фільмів зі списку 250 найрейтинговіших
+              фільмів IMDb
+            </h1>
+            <div class="information__body body-information">
+              <ul class="body-information__list">
+                <li class="body-information__item">
+                  <a href="#thriller" class="body-information__link"
+                    >триллер / бойовик</a
+                  >
+                  <ul class="body-information__sublist">
+                    <li class="body-information__subitem">
+                      <a href="#film_01" class="body-information__sublink"
+                        >Кримінальне чтиво</a
+                      >
+                    </li>
+                    <li class="body-information__subitem">
+                      <a href="#film_02" class="body-information__sublink"
+                        >Матриця</a
+                      >
+                    </li>
+                    <li class="body-information__subitem">
+                      <a href="#film_03" class="body-information__sublink"
+                        >Мовчання ягнят</a
+                      >
+                    </li>
+                    <li class="body-information__subitem">
+                      <a href="#film_04" class="body-information__sublink"
+                        >Відступники</a
+                      >
+                    </li>
+                    <li class="body-information__subitem">
+                      <a href="#film_05" class="body-information__sublink"
+                        >Острів проклятих</a
+                      >
+                    </li>
+                  </ul>
+                </li>
+                <li class="body-information__item">
+                  <a href="#drama" class="body-information__link"
+                    >драма / мелодрама</a
+                  >
+                  <ul class="body-information__sublist">
+                    <li class="body-information__subitem">
+                      <a href="#film_06" class="body-information__sublink"
+                        >Втеча з Шоушенка</a
+                      >
+                    </li>
+                    <li class="body-information__subitem">
+                      <a href="#film_07" class="body-information__sublink"
+                        >Форрест Ґамп</a
+                      >
+                    </li>
+                    <li class="body-information__subitem">
+                      <a href="#film_08" class="body-information__sublink"
+                        >Зелена миля</a
+                      >
+                    </li>
+                    <li class="body-information__subitem">
+                      <a href="#film_09" class="body-information__sublink"
+                        >1+1 (фільм, 2011)</a
+                      >
+                    </li>
+                    <li class="body-information__subitem">
+                      <a href="#film_10" class="body-information__sublink"
+                        >Хатіко: Вірний друг</a
+                      >
+                    </li>
+                  </ul>
+                </li>
+                <li class="body-information__item">
+                  <a href="#fantasy" class="body-information__link"
+                    >фантастика / пригоди</a
+                  >
+                  <ul class="body-information__sublist">
+                    <li class="body-information__subitem">
+                      <a href="#film_11" class="body-information__sublink"
+                        >Початок</a
+                      >
+                    </li>
+                    <li class="body-information__subitem">
+                      <a href="#film_12" class="body-information__sublink"
+                        >Інтерстеллар</a
+                      >
+                    </li>
+                    <li class="body-information__subitem">
+                      <a href="#film_13" class="body-information__sublink"
+                        >Зоряні війни: Імперія завдає удару у відповідь</a
+                      >
+                    </li>
+                    <li class="body-information__subitem">
+                      <a href="#film_14" class="body-information__sublink"
+                        >Аватар</a
+                      >
+                    </li>
+                    <li class="body-information__subitem">
+                      <a href="#film_15" class="body-information__sublink"
+                        >Пірати Карибського моря: Прокляття «Чорної перлини»</a
+                      >
+                    </li>
+                  </ul>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </section>
+        <section id="thriller" class="page__thriller thriller">
+          <div class="thriller__container">
+            <h2 class="thriller__title title">ТРИЛЛЕР / БОЙОВИК</h2>
+            <p class="thriller__info">
+              Три́лер (від англ. thrill — трепет, коливання) — жанр кіно та
+              літератури, в яких специфічні засоби повинні викликати у глядачів
+              або читачів почуття співпереживання, пов'язане з емоціями
+              тривожного очікування, невизначеності, хвилювання чи страху
+            </p>
+            <div id="film_01" class="thriller__item item-thriller">
+              <div class="item-thriller__image">
+                <img src="img/main/01.jpeg" alt="Pulp Fiction Poster" />
+              </div>
+              <div class="item-thriller__info">
+                <div class="item-thriller__text">
+                  <p>
+                    «Криміна́льне чти́во» (англ. Pulp Fiction) — культовий
+                    художній фільм 1994 року виробництва США, одна з
+                    найвідоміших робіт режисера Квентіна Тарантіно. Картина
+                    вважається важливою віхою в історії кінематографа, що дала
+                    відчутний імпульс розвитку незалежного американського кіно.
+                  </p>
+                  <p>
+                    Фільм описує два дні з життя низки американських злочинців.
+                    Найнесподіванішим чином їхні долі перетинаються, приводячи
+                    одних до загибелі, інших до втечі, а декого до
+                    переосмислення свого життя та повернення до чесної роботи.
+                    Оригінальна назва фільму відсилає до дешевих палп-журналів,
+                    які часто публікували низькопробні детективи.
+                  </p>
+                  <p>
+                    У головних ролях: Джон Траволта, Семюел Лірой Джексон, Ума
+                    Турман, Брюс Вілліс, Гарві Кейтель, Тім Рот, Аманда Пламмер
+                    та Вінг Реймс.
+                  </p>
+                  <p>
+                    Станом на 13 серпня 2021 року займає 8-у позицію у списку
+                    250 найкращих фільмів за версією IMDb.
+                  </p>
+                </div>
+                <div class="item-thriller__buttons">
+                  <a href="#header" class="item-thriller__up"
+                    >На початок сторінки</a
+                  >
+                  <div class="item-thriller__online">
+                    <span>Дивитися онлайн -></span>
+                    <a
+                      target="_blank"
+                      href="https://megogo.net/ua/view/1133341-kriminalne-chtivo.html"
+                      class="item-thriller__link"
+                    >
+                      <img src="img/Megogo_Logo.png" alt="Megogo Logo" />
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div id="film_02" class="thriller__item item-thriller">
+              <div class="item-thriller__image">
+                <img src="img/main/02.jpg" alt="The Matrix Poster" />
+              </div>
+              <div class="item-thriller__info">
+                <div class="item-thriller__text">
+                  <p>
+                    «Ма́триця» (англ. The Matrix) — американсько-австралійський
+                    науково-фантастичний фільм, який зняли в 1999 році Сестри
+                    Вачовскі (тоді ще брати Вачовскі).
+                  </p>
+                  <p>
+                    Фільм зображує майбутнє, у якому люди насильно під'єднані
+                    повсталими машинами до Матриці — інтерактивної комп'ютерної
+                    програми, що симулює дійсність. У такий спосіб машини
+                    одержують із людей енергію, що потрібна їм для продовження
+                    існування. Хакерові Нео належить дізнатися яким є справжній
+                    світ і стати визволителем людства.
+                  </p>
+                  <p>
+                    Фільм «Матриця» поєднав у собі революційні способи
+                    фільмування та глибоку філософію, завдяки чому здобув
+                    культовий статус і спричинив значний суспільний резонанс.
+                  </p>
+                  <p>
+                    Станом на 13 серпня 2021 року займає 16-у позицію у списку
+                    250 найкращих фільмів за версією IMDb.
+                  </p>
+                </div>
+                <div class="item-thriller__buttons">
+                  <a href="#header" class="item-thriller__up"
+                    >На початок сторінки</a
+                  >
+                  <div class="item-thriller__online">
+                    <span>Дивитися онлайн -></span>
+                    <a
+                      target="_blank"
+                      href="https://megogo.net/ua/view/2452941-matricya.html"
+                      class="item-thriller__link"
+                    >
+                      <img src="img/Megogo_Logo.png" alt="Megogo Logo" />
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div id="film_03" class="thriller__item item-thriller">
+              <div class="item-thriller__image">
+                <img src="img/main/03.jpg" alt="Silence of the Lambs Poster" />
+              </div>
+              <div class="item-thriller__info">
+                <div class="item-thriller__text">
+                  <p>
+                    «Мовча́ння ягня́т» (англ. The Silence of the Lambs) —
+                    американський психологічний трилер 1991 року, знятий за
+                    мотивами однойменного роману Томаса Гарріса. Головні ролі в
+                    фільмі виконали Джоді Фостер (агентка ФБР Клариса Старлінг)
+                    і Ентоні Гопкінс (серійний вбивця, доктор Ганнібал Лектер).
+                    Стрічка завоювала приз Берлінського кінофестивалю і п'ять
+                    премій «Оскар». Фільм став третім в історії, котрий завоював
+                    «Оскари» в п'яти найпрестижніших номінаціях, що раніше
+                    вдалося фільмам «Однієї щасливої ночі» (1934) та «Пролітаючи
+                    над гніздом зозулі» (1975). З часу виходу на екрани
+                    «Мовчання ягнят» таке не вдавалося більше жодному фільму.
+                  </p>
+                  <p>
+                    ФБР проводить розслідування серії вбивств, скоєних невідомим
+                    серійним вбивцею. За звичку здирати шкіру з убитих ним
+                    жінок, його прозвали «Буффало Біллом». Не знайшовши зачіпок,
+                    ФБР вирішує звернутися за порадою до вбивці-канібала, у
+                    минулому психіатра, надзвичайно небезпечного
+                    Ганнібала-«Канібала» Лектера, котрий перебуває в ізоляторі
+                    психлікарні. Для розмови з ним відправляють молоду слухачку
+                    академії ФБР Кларису Старлінґ. Між Лектером і Старлінґ
+                    виникає зв'язок, Лектер починає грати з нею у дивну
+                    психологічну гру...
+                  </p>
+                  <p>
+                    Станом на 13 серпня 2021 року займає 21-у позицію у списку
+                    250 найкращих фільмів за версією IMDb.
+                  </p>
+                </div>
+                <div class="item-thriller__buttons">
+                  <a href="#header" class="item-thriller__up"
+                    >На початок сторінки</a
+                  >
+                  <div class="item-thriller__online">
+                    <span>Дивитися онлайн -></span>
+                    <a
+                      target="_blank"
+                      href="https://rezka.ag/films/thriller/1170-molchanie-yagnyat-1991.html"
+                      class="item-thriller__link"
+                    >
+                      <img src="img/Megogo_Logo.png" alt="Megogo Logo" />
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div id="film_04" class="thriller__item item-thriller">
+              <div class="item-thriller__image">
+                <img src="img/main/04.jpg" alt="The Departed Poster" />
+              </div>
+              <div class="item-thriller__info">
+                <div class="item-thriller__text">
+                  <p>
+                    «Відступники» (англ. The Departed) — художній фільм 2006
+                    року режисера Мартіна Скорсезе. Картина поєднує в собі жанри
+                    кримінальної драми й трилера.
+                  </p>
+                  <p>
+                    На 13 жовтня 2021 року фільм займав 45-у позицію у списку
+                    250 найкращих фільмів за версією IMDb. Для прокату в Україні
+                    кінокомпанія Синергія Україна створила україномовний дубляж
+                    й стрічка стала однією з перших, які йшли в кінотеатрах
+                    України з україномовним дубляжем. Опісля фільм не виходив на
+                    домашньому відео з україномовним дубляжем і станом на 2020
+                    український дубляж фільму досі не знайдено та не відновлено.
+                  </p>
+                  <p>
+                    Фільм починається «кілька років тому» в Бостоні, штат
+                    Массачусетс, де кримінальний бос Френк Костелло (Джек
+                    Ніколсон) бере під своє крило десятирічного Коліна
+                    Саллівана, збираючись в майбутньому зробити його своєю
+                    людиною в поліції. Минають роки й Салліван (Метт Деймон)
+                    закінчує школу поліції штату Массачусетс...
+                  </p>
+                </div>
+
+                <div class="item-thriller__buttons">
+                  <a href="#header" class="item-thriller__up"
+                    >На початок сторінки</a
+                  >
+                  <div class="item-thriller__online">
+                    <span>Дивитися онлайн -></span>
+                    <a
+                      target="_blank"
+                      href="https://rezka.ag/films/detective/824-otstupniki-2006.html"
+                      class="item-thriller__link"
+                    >
+                      <img src="img/Megogo_Logo.png" alt="Megogo Logo" />
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div id="film_05" class="thriller__item item-thriller">
+              <div class="item-thriller__image">
+                <img src="img/main/05.jpg" alt="Shutter Island Poster" />
+              </div>
+              <div class="item-thriller__info">
+                <div class="item-thriller__text">
+                  <p>
+                    «О́стрів про́клятих» (англ. Shutter Island) — американський
+                    психологічний трилер від режисера Мартіна Скорсезе за
+                    однойменним романом Денніса Лігейна 2003 року. Двоє
+                    федеральних маршалів США прямують на один з островів у штаті
+                    Массачусетс, щоб розслідувати зникнення пацієнтки з клініки
+                    для божевільних злочинців. Під час розслідування їм
+                    доведеться зіткнутися з брехнею, ураганом і смертельним
+                    бунтом мешканців закладу.
+                  </p>
+                  <p>
+                    Прем'єрний показ фільму відбувся 13 лютого 2010 року в
+                    Німеччині, а в Україні — 18 лютого.
+                  </p>
+                  <p>
+                    Двоє маршалів, Едвард «Тедді» Деніелс та його напарник Чак,
+                    пливуть на острів Шаттер, що розташований у Бостонській
+                    бухті, щоб розслідувати зникнення пацієнтки Рейчел Соландо з
+                    психіатричної клініки для особливо небезпечних злочинців.
+                    Лікарня суворо охороняється, 42 її пацієнти перебувають у
+                    звичайних корпусах, а ще 24, особливо небезпечних —
+                    усередині колишнього військового форту, переобладнаного на
+                    третій корпус лікарні...
+                  </p>
+                  <p>
+                    На 19 серпня 2021 року фільм займав 154-у позицію у списку
+                    250 кращих фільмів за версією IMDb.
+                  </p>
+                </div>
+
+                <div class="item-thriller__buttons">
+                  <a href="#header" class="item-thriller__up"
+                    >На початок сторінки</a
+                  >
+                  <div class="item-thriller__online">
+                    <span>Дивитися онлайн -></span>
+                    <a
+                      target="_blank"
+                      href="https://megogo.net/ua/view/67041-ostriv-proklyatih.html"
+                      class="item-thriller__link"
+                    >
+                      <img src="img/Megogo_Logo.png" alt="Megogo Logo" />
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section id="drama" class="page__drama drama">
+          <div class="drama__container">
+            <h2 class="drama__title title">ДРАМА / МЕЛОДРАМА</h2>
+            <p class="drama__info">
+              Дра́ма (дав.-гр. δρᾶμα — «дія», «діяння», «дійство») — літературний
+              жанр, п'єса соціального, історичного чи побутового характеру з
+              гострим конфліктом, який розвивається в постійній напрузі. Герої —
+              переважно звичайні люди. Автор прагне розкрити їхню психологію,
+              дослідити еволюцію характерів, мотивацію вчинків і дій.
+            </p>
+            <div id="film_06" class="drama__item item-drama">
+              <div class="item-drama__image">
+                <img src="img/main/06.jpg" alt="Shawshank Redemption Poster" />
+              </div>
+              <div class="item-drama__info">
+                <div class="item-drama__text">
+                  <p>
+                    «Втеча з Шоушенка» (англ. The Shawshank Redemption; слово
+                    «redemption» може мати значення «порятунок», «звільнення»,
+                    «спокута») — американський фільм-драма 1994 року, знятий
+                    режисером Френком Дарабонтом за повістю Стівена Кінга «Ріта
+                    Гейворт і втеча з Шоушенка» (англ. Rita Hayworth and
+                    Shawshank Redemption).
+                  </p>
+                  <p>
+                    Молодий банківський працівник Енді Дюфрейн звинувачений у
+                    вбивстві своєї дружини і її коханця, якого він не скоював.
+                    Але усі докази проти нього — його засуджують до двох
+                    довічних термінів тюремного ув'язнення. Після вироку його
+                    поміщають до Шоушенка — однієї з найпохмуріших в'язниць
+                    Нової Англії. Начальник в'язниці Семюел Нортон демонструє
+                    показову релігійність, що не заважає йому займатися темними
+                    справами. Головний охоронець-садист Байрон Хедлі вже в першу
+                    ніч забиває на смерть одного з ув'язнених, які прибули разом
+                    з Дюфрейном. Незабаром Дюфрейн стає об'єктом сексуальних
+                    домагань групи ув'язнених, відомих як «Сестри». Але важкі
+                    умови його не зломили...
+                  </p>
+                  <p>
+                    Станом на 13 серпня 2021 року займає 1-у позицію у списку
+                    250 найкращих фільмів за версією IMDb.
+                  </p>
+                </div>
+                <div class="item-drama__buttons">
+                  <a href="#header" class="item-drama__up"
+                    >На початок сторінки</a
+                  >
+                  <div class="item-drama__online">
+                    <span>Дивитися онлайн -></span>
+                    <a
+                      target="_blank"
+                      href="https://megogo.net/ua/view/1325261-vtecha-z-shoushenka.html"
+                      class="item-drama__link"
+                    >
+                      <img src="img/Megogo_Logo.png" alt="Megogo Logo" />
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div id="film_07" class="drama__item item-drama">
+              <div class="item-drama__image">
+                <img src="img/main/07.jpg" alt="Forrest Gump Poster" />
+              </div>
+              <div class="item-drama__info">
+                <div class="item-drama__text">
+                  <p>
+                    «Фо́ррест Ґамп» (англ. «Forrest Gump») — дев'ятий
+                    повнометражний фільм режисера Роберта Земекіса, поставлений
+                    за однойменним романом американського письменника Вінстона
+                    Ґрума (1986).
+                  </p>
+                  <p>
+                    Фільм вийшов на екрани в 1994 році та став найуспішнішим
+                    фільмом режисера як серед глядачів (перше місце за касовими
+                    зборами в 1994 році), так і серед критиків та професійних
+                    кінематографістів (38 нагород по всьому світу, включаючи 6
+                    премій «Оскар»).
+                  </p>
+                  <p>
+                    В центрі подій фільму знаходиться недоумкуватий Форрест Ґамп
+                    з вигаданого міста Ґрінбоу штату Алабама. Сюжет починається
+                    з дитинства героя та закінчується тим, як він відправляє в
+                    школу власного сина. По ходу сюжету Форрест бере участь в
+                    найважливіших подіях американської історії XX століття та
+                    мимоволі справляє величезний вплив на попкультуру США.
+                  </p>
+                  <p>
+                    Станом на 13 серпня 2021 року займає 12-у позицію у списку
+                    250 найкращих фільмів за версією IMDb.
+                  </p>
+                </div>
+                <div class="item-drama__buttons">
+                  <a href="#header" class="item-drama__up"
+                    >На початок сторінки</a
+                  >
+                  <div class="item-drama__online">
+                    <span>Дивитися онлайн -></span>
+                    <a
+                      target="_blank"
+                      href="https://megogo.net/ua/view/1954611-forrest-amp.html"
+                      class="item-drama__link"
+                    >
+                      <img src="img/Megogo_Logo.png" alt="Megogo Logo" />
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div id="film_08" class="drama__item item-drama">
+              <div class="item-drama__image">
+                <img src="img/main/08.jpg" alt="The Green Mile Poster" />
+              </div>
+              <div class="item-drama__info">
+                <div class="item-drama__text">
+                  <p>
+                    «Зелена миля» (англ. The Green Mile) — містична американська
+                    драма 1999 року за однойменним романом Стівена Кінга. 4
+                    номінації на «Оскар», 3 премії «Сатурн», ще 10 нагород і 23
+                    номінації. Режисер — Френк Дарабонт.
+                  </p>
+                  <p>
+                    Історія у фільмі викладається як спогад літнього чоловіка,
+                    мешканця будинку пристарілих Пола Еджкомба (Том Генкс),
+                    якому вже виповнилося 108 років. Він розповідає своїй
+                    подрузі Елейн Коннеллі (Єва Брент), як працював охоронцем у
+                    в'язниці.
+                  </p>
+                  <p>
+                    У 1935 році Пол працює наглядачем у найбільш похмурому
+                    відділенні федеральної в'язниці «Холодна гора» (штат
+                    Луїзіана) — блок «Е», де утримуються ув'язнені, які очікують
+                    страти на електричному стільці. Підлога в блоці, якою
+                    засуджені вирушають в останню путь, зеленого кольору, звідси
+                    й назва — «Зелена миля» або просто «Миля».
+                  </p>
+                  <p>
+                    Станом на 13 серпня 2021 року фільм займав 29-у позицію у
+                    списку 250 найкращих фільмів за версією IMDb.
+                  </p>
+                </div>
+                <div class="item-drama__buttons">
+                  <a href="#header" class="item-drama__up"
+                    >На початок сторінки</a
+                  >
+                  <div class="item-drama__online">
+                    <span>Дивитися онлайн -></span>
+                    <a
+                      target="_blank"
+                      href="https://rezka.ag/films/drama/825-zelenaya-milya-1999.html"
+                      class="item-drama__link"
+                    >
+                      <img src="img/Megogo_Logo.png" alt="Megogo Logo" />
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div id="film_09" class="drama__item item-drama">
+              <div class="item-drama__image">
+                <img src="img/main/09.jpg" alt="Intouchables Poster" />
+              </div>
+              <div class="item-drama__info">
+                <div class="item-drama__text">
+                  <p>
+                    «Недоторканні» або «1+1» (фр. Intouchables) — французький
+                    кінофільм режисерів Олів'є Накаша та Еріка Толедано. У
+                    головних ролях знялися Омар Сі та Франсуа Клюзе.
+                  </p>
+                  <p>
+                    Паралізований багатий аристократ Філіпп, який став інвалідом
+                    після того, як розбився на параплані, шукає собі помічника,
+                    який повинен його доглядати. Одного з кандидатів,
+                    чорношкірого Дрісса, робота не цікавить — йому потрібна
+                    формальна письмова відмова, щоб продовжувати отримувати
+                    допомогу з безробіття. Але зненацька саме його Філіп бере на
+                    роботу. Вихідцю з Сенегалу з кримінальними нахилами,
+                    любителю марихуани, жінок і ритмічної музики зовсім невідомі
+                    гарні манери — він грубий, нетактовний і далекий від
+                    будь-яких умовностей...
+                  </p>
+                  <p>
+                    Прем'єра відбулася 2 листопада 2011 року у Франції та 26
+                    квітня 2012 року в Україні.
+                  </p>
+                  <p>
+                    На 13 серпня 2021 року фільм займав 46-у позицію у списку
+                    250 найкращих фільмів за версією IMDb.
+                  </p>
+                </div>
+                <div class="item-drama__buttons">
+                  <a href="#header" class="item-drama__up"
+                    >На початок сторінки</a
+                  >
+                  <div class="item-drama__online">
+                    <span>Дивитися онлайн -></span>
+                    <a
+                      target="_blank"
+                      href="https://rezka.ag/films/drama/289-11-2011.html"
+                      class="item-drama__link"
+                    >
+                      <img src="img/Megogo_Logo.png" alt="Megogo Logo" />
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div id="film_10" class="drama__item item-drama">
+              <div class="item-drama__image">
+                <img src="img/main/10.jpg" alt="Hachi: A Dog's Tale Poster" />
+              </div>
+              <div class="item-drama__info">
+                <div class="item-drama__text">
+                  <p>
+                    «Хатіко: Вірний друг» (англ. «Hachi: A Dog's Tale») —
+                    екранізація відомої історії життя песика Хатіко. Фільм було
+                    знято у 2009 році. Країна випуску США. Тривалість фільму 85
+                    хвилин.
+                  </p>
+                  <p>
+                    Фільм поставлений за відомою правдивою історією, що сталася
+                    в Японії в 20-х роках ХХ століття. Господар назвав нового
+                    чотириногого вихованця породи акіта-іну Хатіко (японською -
+                    Восьмий). Коли Хаті підріс, він став постійно супроводжувати
+                    господаря. Песик щодня проводжав і зустрічав свого власника
+                    Паркера (Річард Ґір) на вокзалі. Потім чоловік несподівано
+                    помер прямо на лекції в присутності студентів. Того дня
+                    вірний собака не дочекався його повернення. Незважаючи на це
+                    Хатіко протягом 9 років, щовечора о 5 годині приходив на
+                    вокзал зустрічати хазяїна і чекав його до останнього поїзда,
+                    допоки не помер від старості. Родичі Паркера шкодували пса і
+                    кілька разів намагалися дати йому прихисток у себе вдома,
+                    проте тварина втекла назад до своєї варти. Місцеві торговці
+                    підгодовували охлялого собаку, захоплюючись про себе його
+                    відданістю та терплячістю. А залізничники контролювали, щоб
+                    собаку, який став неодмінним атрибутом пристанційної площі,
+                    ніхто не ображав.
+                  </p>
+                  <p>
+                    На 23 серпня 2021 року фільм займав 219-у позицію у списку
+                    250 кращих фільмів за версією IMDb.
+                  </p>
+                </div>
+                <div class="item-drama__buttons">
+                  <a href="#header" class="item-drama__up"
+                    >На початок сторінки</a
+                  >
+                  <div class="item-drama__online">
+                    <span>Дивитися онлайн -></span>
+                    <a
+                      target="_blank"
+                      href="https://megogo.net/ua/view/1610311-hatiko-nayvirnishiy-drug.html"
+                      class="item-drama__link"
+                    >
+                      <img src="img/Megogo_Logo.png" alt="Megogo Logo" />
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section id="fantasy" class="page__fantasy fantasy">
+          <div class="fantasy__container">
+            <h2 class="fantasy__title title">ФАНТАСТИКА / ПРИГОДИ</h2>
+            <p class="fantasy__info">
+              Фанта́стика (від дав.-гр. φανταστική — мистецтво уяви, фантазія) —
+              жанр художніх творів, в якому за допомогою додавання вигаданих
+              уявних елементів створюється світ, відмінний від світу
+              сьогоденного, реального. Основною ознакою фантастики є наявність у
+              творі фантастичного допущення — фактора, який невідомий або
+              неможливий у реальному світі.
+            </p>
+            <div id="film_11" class="fantasy__item item-fantasy">
+              <div class="item-fantasy__image">
+                <img src="img/main/11.jpg" alt="Inception Poster" />
+              </div>
+              <div class="item-fantasy__info">
+                <div class="item-fantasy__text">
+                  <p>
+                    «Початок» (англ. «Inception», точніший переклад —
+                    «Укорінення»[джерело?][прояснити]) — науково-фантастичний
+                    трилер 2010 року режисера Крістофера Нолана. У головних
+                    ролях знялись Леонардо Ді Капріо, а також Кен Ватанабе,
+                    Джозеф Гордон-Левітт, Маріон Котіяр, Елліот Пейдж, Том
+                    Гарді, Кілліан Мерфі, Том Беренджер, Діліп Рао і Майкл Кейн.
+                  </p>
+                  <p>
+                    Домінік Кобб (Леонардо Ді Капріо) прокидається на пляжі, де
+                    його виявляють озброєні люди і приводять до господаря —
+                    старого японця. Охорона показує старому речі Кобба: пістолет
+                    і мініатюрну металеву дзиґу — тотем Кобба. Старий починає
+                    обертати його.
+                  </p>
+                  <p>
+                    У наступній сцені Кобб в присутності свого напарника Артура
+                    (Джозеф Гордон-Левітт) пропонує бізнесмену Саїто (Кен
+                    Ватанабе) свої послуги із захисту від вилучення. Насправді,
+                    мета Кобба і Артура — секретна інформація Саїто, яку їм
+                    вдається вилучити, але несподівано виявляється, що дружина
+                    Кобба Мол (Маріон Котіяр) поінформувала Саїто про їх цілі і
+                    той відредагував дані...
+                  </p>
+                  <p>
+                    В Україні фільм вийшов у прокат у IMAX-кінотеатрах 22 липня
+                    2010 року.
+                  </p>
+                  <p>
+                    Станом на 13 серпня 2021 року займає 13-у позицію у списку
+                    250 найкращих фільмів за версією IMDb.
+                  </p>
+                </div>
+                <div class="item-fantasy__buttons">
+                  <a href="#header" class="item-fantasy__up"
+                    >На початок сторінки</a
+                  >
+                  <div class="item-fantasy__online">
+                    <span>Дивитися онлайн -></span>
+                    <a
+                      target="_blank"
+                      href="https://megogo.net/ua/view/2454521-pochatok.html"
+                      class="item-fantasy__link"
+                    >
+                      <img src="img/Megogo_Logo.png" alt="Megogo Logo" />
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div id="film_12" class="fantasy__item item-fantasy">
+              <div class="item-fantasy__image">
+                <img src="img/main/12.jpg" alt="Interstellar Poster" />
+              </div>
+              <div class="item-fantasy__info">
+                <div class="item-fantasy__text">
+                  <p>
+                    «Інтерсте́ллар» (англ. «Interstellar», тобто буквально
+                    «Міжзоряний [політ]») — американсько-британський
+                    науково-фантастичний кінофільм від Крістофера Нолана. В
+                    головних ролях знялись Меттью Макконехі, Енн Гетевей,
+                    Джессіка Честейн, Кейсі Аффлек і Майкл Кейн. Нолан зв'язав
+                    свої ідеї з існуючим сценарієм, написаним його братом
+                    Джонатаном Ноланом, який розроблявся у 2007 році для студії
+                    Paramount Pictures. В Україні фільм вийшов у прокат у
+                    IMAX-кінотеатрах 6 листопада 2014.
+                  </p>
+                  <p>
+                    Події фільму починаються в недалекому майбутньому — Земля
+                    вже не в змозі підтримувати людство, пилові бурі винищують
+                    ґрунти, відбувається регрес сучасного суспільства до
+                    аграрного. Купер (Меттью Макконехі), колишній
+                    льотчик-випробувач NASA і інженер, повертається на ферму до
+                    своєї сім'ї: сина Тома, 10-річної дочки Мерфі та батька його
+                    померлої дружини Дональда. Мерфі вважає, що в їхньому
+                    будинку є привид, який намагається спілкуватися з нею. Купер
+                    бачить, як Мерфі намагається науково обґрунтувати існування
+                    примари, та несподіванно виявляє, що «привид» — це невідома
+                    форма інтелекту, яка відправляє їм закодовані повідомлення
+                    за допомогою гравітаційної аномалії — змінюючи пил на
+                    підлозі у вигляді візерунка, який нагадує азбуку Морзе...
+                  </p>
+                  <p>
+                    На 13 серпня 2021 року фільм займав 28-у позицію у списку
+                    250 найкращих фільмів за версією IMDb.
+                  </p>
+                </div>
+                <div class="item-fantasy__buttons">
+                  <a href="#header" class="item-fantasy__up"
+                    >На початок сторінки</a
+                  >
+                  <div class="item-fantasy__online">
+                    <span>Дивитися онлайн -></span>
+                    <a
+                      target="_blank"
+                      href="https://megogo.net/ua/view/1244431-interstellar.html"
+                      class="item-fantasy__link"
+                    >
+                      <img src="img/Megogo_Logo.png" alt="Megogo Logo" />
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div id="film_13" class="fantasy__item item-fantasy">
+              <div class="item-fantasy__image">
+                <img
+                  src="img/main/13.jpg"
+                  alt="Star Wars Episode V: The Empire Strikes Back Poster"
+                />
+              </div>
+              <div class="item-fantasy__info">
+                <div class="item-fantasy__text">
+                  <p>
+                    «Зоряні війни. Епізод V. Імперія завдає удару у відповідь»
+                    (англ. Star Wars Episode V: The Empire Strikes Back) —
+                    науково-фантастичний фільм, знятий Ірвіном Кершнером, другий
+                    за порядком випуску, але хронологічно п'ятий фільм кіносаги
+                    «Зоряні війни».
+                  </p>
+                  <p>
+                    Після знищення повстанцями «Зірки смерті» Дарт Вейдер
+                    починає пошук нової бази Альянсу, яка розташована на
+                    крижаній планеті Хот. Він розсилає галактикою
+                    дроїдів-шукачів, один з яких падає на Хот. Люк Скайвокер
+                    патрулює територію навколо бази, коли раптом бачить падіння
+                    шукача і вирушає туди, але на нього нападає хижа тварина
+                    вампа. Вампа забирає його до свого лігвища, але Люк
+                    звільняється за допомогою світлового меча і тікає у снігову
+                    пустелю. Тут його знаходить Ган Соло, що вирушив на пошуки,
+                    відклавши повернення боргу Джаббі Хатту. Люк несподівано
+                    бачить видіння Обі-Вана Кенобі, яке направляє його вчитись у
+                    джедая Йоди на планету Дагоба. Вейдер, попри недовіру
+                    генералів, посилає війська на Хот...
+                  </p>
+                  <p>
+                    Прем'єра відбулася 21 травня 1980 року. У прокаті картина
+                    зібрала понад 538 млн доларів, при бюджеті 33 млн доларів.
+                  </p>
+                  <p>
+                    Станом на 13 серпня 2021 року займає 15-у позицію у списку
+                    250 найкращих фільмів за версією IMDb.
+                  </p>
+                </div>
+                <div class="item-fantasy__buttons">
+                  <a href="#header" class="item-fantasy__up"
+                    >На початок сторінки</a
+                  >
+                  <div class="item-fantasy__online">
+                    <span>Дивитися онлайн -></span>
+                    <a
+                      target="_blank"
+                      href="https://megogo.net/ua/view/1674821-zoryani-viyni-epizod-5-imperiya-zavdae-udaru-u-vidpovid.html"
+                      class="item-fantasy__link"
+                    >
+                      <img src="img/Megogo_Logo.png" alt="Megogo Logo" />
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div id="film_14" class="fantasy__item item-fantasy">
+              <div class="item-fantasy__image">
+                <img src="img/main/14.jpg" alt="Avatar Poster" />
+              </div>
+              <div class="item-fantasy__info">
+                <div class="item-fantasy__text">
+                  <p>
+                    «Авата́р» (англ. Avatar) — американський науково-фантастичний
+                    фільм 2009 року сценариста і режисера Джеймса Кемерона з
+                    Семом Вортінгтоном і Зої Салданою в головних ролях. Дія
+                    фільму відбувається в 2154 році, коли людство видобуває
+                    цінний мінерал унобтаній на Пандорі, населеному супутнику
+                    газової планети в зоряній системі Альфа Центавра. За сюжетом
+                    ресурсодобувна корпорація загрожує існуванню місцевого
+                    племені людиноподібних розумних істот — на'ві. Назва фільму
+                    — назва генетично спроектованих тіл гібридів на'ві і людей,
+                    які використовуються командою дослідників для вивчення
+                    планети та взаємодії з тубільними мешканцями Пандори.
+                  </p>
+                  <p>
+                    Прем'єра «Аватара» відбулася в Лондоні 10 грудня 2009 року.
+                    У міжнародний прокат, включаючи США і Канаду, фільм вийшов
+                    16-18 грудня того ж року. Картина мала комерційний успіх і
+                    здобула схвалення критиків. Вона побила декілька рекордів по
+                    зборах, ставши найкасовішим фільмом всіх часів в Північній
+                    Америці, Україні і в усьому світі, обійшовши «Титанік», який
+                    утримував рекорд протягом 12 років. «Аватар» також став
+                    першим фільмом в історії кінематографа, касові збори якого
+                    перевищили позначку в 2 мільярди доларів.
+                  </p>
+                </div>
+                <div class="item-fantasy__buttons">
+                  <a href="#header" class="item-fantasy__up"
+                    >На початок сторінки</a
+                  >
+                  <div class="item-fantasy__online">
+                    <span>Дивитися онлайн -></span>
+                    <a
+                      target="_blank"
+                      href="https://megogo.net/ua/view/10111375-avatar.html"
+                      class="item-fantasy__link"
+                    >
+                      <img src="img/Megogo_Logo.png" alt="Megogo Logo" />
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div id="film_15" class="fantasy__item item-fantasy">
+              <div class="item-fantasy__image">
+                <img
+                  src="img/main/15.jpg"
+                  alt="Pirates of the Caribbean: The Curse of the Black Pearl Poster"
+                />
+              </div>
+              <div class="item-fantasy__info">
+                <div class="item-fantasy__text">
+                  <p>
+                    Піра́ти Кари́бського мо́ря: Прокля́ття «Чо́рної перли́ни» (англ.
+                    Pirates of the Caribbean: The Curse of the Black Pearl) —
+                    американський фантастичний пригодницький фільм 2003 року.
+                    Режисер — Гор Вербінскі. Перший із серії фільмів "Пірати
+                    Карибського моря".
+                  </p>
+                  <p>
+                    Кінець XVII століття. Корабель із королівського флоту з
+                    Порт-Рояля помічає в Карибському морі палаючий корабель.
+                    Дівчина на ім'я Елізабет Свонн, донька губернатора,
+                    знаходить поряд з кораблем в океані маленького хлопчика
+                    Вілла Тернера. Коли його витягнули на борт, Елізабет
+                    знаходить на ньому піратський медальйон і забирає його, щоб
+                    дорослі не подумали, що він пірат. З того моменту минуло 10
+                    років. Елізабет досі зберігає медальйон і вирішує надягти
+                    його після того, як їй приснився Вілл. Вілл у цей час працює
+                    підмайстром у коваля і закоханий в доньку губернатора, але
+                    командор Джеймс Норрінгтон вже освідчився Елізабет...
+                  </p>
+                  <p>
+                    Фільм вийшов в український прокат 21 серпня 2003 року; для
+                    українського прокату тоді не було створено український
+                    дубляж і фільм демонструвався з російським дубляжем.
+                    Український дубляж цього фільму було створено на студії
+                    LeDoyen лише у 2017 році для релізу на home video.
+                  </p>
+                </div>
+                <div class="item-fantasy__buttons">
+                  <a href="#header" class="item-fantasy__up"
+                    >На початок сторінки</a
+                  >
+                  <div class="item-fantasy__online">
+                    <span>Дивитися онлайн -></span>
+                    <a
+                      target="_blank"
+                      href="https://megogo.net/ua/view/988531-pirati-karibskogo-morya-proklyattya-chorno-perlini.html"
+                      class="item-fantasy__link"
+                    >
+                      <img src="img/Megogo_Logo.png" alt="Megogo Logo" />
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+      </main>
+      <footer class="footer">
+        <div class="footer__container">
+          <div class="footer__top top-footer">
+            <div class="top-footer__navigation navigation-top-footer">
+              <ul class="navigation-top-footer__list">
+                <li class="navigation-top-footer__item">
+                  <a href="#header" class="navigation-top-footer__link"
+                    >ГОЛОВНА СТОРІНКА</a
+                  >
+                </li>
+                <li class="navigation-top-footer__item">
+                  <a
+                    href="#thriller"
+                    class="navigation-top-footer__link link-navigation-top-footer-second"
+                    >ТРИЛЛЕР / БОЙОВИК</a
+                  >
+                </li>
+                <li class="navigation-top-footer__item">
+                  <a
+                    href="#drama"
+                    class="navigation-top-footer__link link-navigation-top-footer-third"
+                    >ДРАМА / МЕЛОДРАМА</a
+                  >
+                </li>
+                <li class="navigation-top-footer__item">
+                  <a
+                    href="#fantasy"
+                    class="navigation-top-footer__link link-navigation-top-footer-fourth"
+                    >ФАНТАСТИКА / ПРИГОДИ</a
+                  >
+                </li>
+              </ul>
+            </div>
+            <div class="top-footer__social social-top-footer">
+              <a
+                target="_blank"
+                href="https://www.facebook.com/"
+                class="social-top-footer__item"
+              >
+                <img src="img/social/facebook.png" alt="facebook icon" />
+              </a>
+              <a
+                target="_blank"
+                href="https://www.instagram.com/"
+                class="social-top-footer__item"
+              >
+                <img src="img/social/insta.png" alt="instagram icon" />
+              </a>
+              <a
+                target="_blank"
+                href="https://www.youtube.com/"
+                class="social-top-footer__item"
+              >
+                <img src="img/social/youtube.png" alt="youtube icon" />
+              </a>
+            </div>
+          </div>
+          <div class="footer__bottom bottom-footer">
+            © 2022. Всі права захищені. Виконав Мусієнко Руслан
+          </div>
+        </div>
+      </footer>
+    </div>
+    <script src="js/script.js"></script>
+  </body>
+</html>
