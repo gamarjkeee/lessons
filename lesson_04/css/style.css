@@ -1,0 +1,517 @@
+/* ============================================ */
+
+@import url("_null.css");
+@import url("https://fonts.googleapis.com/css?family=Exo+2:regular,700,900&display=swap");
+
+/* ============================================ */
+
+@font-face {
+  font-family: "Larsseit";
+  src: url("../fonts/Larsseit.woff2") format("woff2"),
+    url("../fonts/Larsseit.woff") format("woff");
+  font-display: swap;
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Larsseit";
+  src: url("../fonts/Larsseit-Medium.woff2") format("woff2"),
+    url("../fonts/Larsseit-Medium.woff") format("woff");
+  font-display: swap;
+  font-weight: 500;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Larsseit";
+  src: url("../fonts/Larsseit-Bold.woff2") format("woff2"),
+    url("../fonts/Larsseit-Bold.woff") format("woff");
+  font-display: swap;
+  font-weight: 700;
+  font-style: normal;
+}
+
+/* ============================================ */
+
+@font-face {
+  font-family: "Lato";
+  src: url("../fonts/Lato-Regular.woff2") format("woff2"),
+    url("../fonts/Lato-Regular.woff") format("woff");
+  font-display: swap;
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Lato";
+  src: url("../fonts/Lato-Bold.woff2") format("woff2"),
+    url("../fonts/Lato-Bold.woff") format("woff");
+  font-display: swap;
+  font-weight: 700;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Lato";
+  src: url("../fonts/Lato-Black.woff2") format("woff2"),
+    url("../fonts/Lato-Black.woff") format("woff");
+  font-display: swap;
+  font-weight: 900;
+  font-style: normal;
+}
+
+/* ============================================ */
+
+body {
+  font-family: "Exo 2", sans-serif;
+  height: 100%;
+}
+
+/* ============================================ */
+
+[class*="__container"] {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 15px;
+}
+
+/* ============================================ */
+
+.wrapper {
+  min-height: 100%;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+}
+
+/* ============================================ */
+
+.title {
+  font-family: "Lato";
+  font-weight: 700;
+  font-size: 42px;
+  line-height: 150%;
+  font-weight: 700;
+  color: #6a5acd;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+/* ===================HEADER=================== */
+
+.header {
+  background-color: #696969;
+}
+
+.header__container {
+  padding: 20px 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 30px;
+}
+
+.header__logo {
+  border-radius: 15px;
+  width: 200px;
+  overflow: hidden;
+}
+
+.header__logo img {
+  max-width: 100%;
+  transition-duration: 0.3s;
+}
+.header__logo img:hover {
+  transform: scale(1.2);
+}
+
+.header__list {
+  display: flex;
+  column-gap: 40px;
+}
+
+.header__link {
+  position: relative;
+  text-transform: uppercase;
+  color: #ffffff;
+  font-family: "Exo 2", sans-serif;
+  font-size: 17px;
+  letter-spacing: 1px;
+  padding: 5px;
+  transition-duration: 0.3s;
+}
+
+.header__link::before {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 0;
+  height: 2px;
+  background-color: #f6c700;
+  transition-duration: 0.3s;
+}
+
+.header__link:hover {
+  color: #f6c700;
+}
+
+.header__link:hover::before {
+  width: 100%;
+}
+
+/* =====================MAIN=================== */
+
+.page {
+  flex: 1 1 auto;
+}
+
+/* --------------INFORMATION----------------*/
+
+.page__information {
+  padding: 80px 0;
+}
+
+.information__title {
+  margin-bottom: 50px;
+}
+
+.body-information__list {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+}
+
+.body-information__link {
+  position: relative;
+  text-transform: uppercase;
+  font-size: 18px;
+  letter-spacing: 1px;
+  padding: 5px;
+  transition-duration: 0.3s;
+  border-radius: 5px;
+}
+.body-information__link::before {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 0;
+  height: 2px;
+  background-color: #6a5acd;
+  transition-duration: 0.3s;
+}
+.body-information__link:hover {
+  color: #6a5acd;
+}
+.body-information__link:hover::before {
+  width: 100%;
+}
+
+.body-information__sublist {
+  margin-top: 20px;
+  display: flex;
+  flex-direction: column;
+  row-gap: 15px;
+}
+
+.body-information__subitem {
+  padding-left: 10px;
+}
+
+.body-information__sublink {
+  display: inline-block;
+  padding-left: 20px;
+  position: relative;
+  transition-duration: 0.3s;
+}
+
+.body-information__sublink::before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 0;
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background-color: #f6c700;
+  transform: translateY(-40%);
+  transition-duration: 0.3s;
+}
+
+.body-information__sublink:hover {
+  text-decoration: underline;
+}
+
+.body-information__sublink:hover::before {
+  background-color: #6a5acd;
+}
+
+/* --------------THRILLER / DRAMA / FANTASY----------------*/
+
+.page__thriller,
+.page__drama,
+.page__fantasy {
+  padding: 80px 0;
+}
+
+.page__fantasy {
+  padding-bottom: 160px;
+}
+
+.page__drama {
+  background-color: rgba(255, 255, 224, 0.3);
+}
+
+.thriller__title,
+.drama__title,
+.fantasy__title {
+  margin-bottom: 50px;
+}
+
+.thriller__info,
+.drama__info,
+.fantasy__info {
+  font-size: 24px;
+  line-height: 150%;
+}
+
+.thriller__item,
+.drama__item,
+.fantasy__item {
+  display: grid;
+  gap: 30px;
+  grid-template-columns: repeat(2, auto);
+  padding-top: 50px;
+}
+
+.thriller__item:not(:last-child),
+.drama__item:not(:last-child),
+.fantasy__item:not(:last-child) {
+  padding-bottom: 10px;
+}
+
+.item-thriller__image,
+.item-drama__image,
+.item-fantasy__image {
+  width: 307px;
+  flex: 0 1 307px;
+  overflow: hidden;
+}
+
+.item-thriller__image img,
+.item-drama__image img,
+.item-fantasy__image img {
+  width: 100%;
+  height: 456px;
+  object-fit: cover;
+  transition-duration: 0.3s;
+}
+
+.item-thriller__image img:hover,
+.item-drama__image img:hover,
+.item-fantasy__image img:hover {
+  transform: scale(1.1);
+}
+
+.item-thriller__info,
+.item-drama__info,
+.item-fantasy__info {
+  flex: 0 1 60%;
+  font-size: 16px;
+  line-height: 150%;
+  display: flex;
+  flex-direction: column;
+}
+
+.item-thriller__text,
+.item-drama__text,
+.item-fantasy__text {
+  flex: 1 1 auto;
+}
+
+.item-thriller__text > p:not(:last-child),
+.item-drama__text > p:not(:last-child),
+.item-fantasy__text > p:not(:last-child) {
+  margin-bottom: 20px;
+}
+
+.item-thriller__buttons,
+.item-drama__buttons,
+.item-fantasy__buttons {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-weight: 700;
+  font-size: 18px;
+  margin-top: 20px;
+}
+
+.item-thriller__up,
+.item-drama__up,
+.item-fantasy__up {
+  padding: 5px;
+  position: relative;
+  color: #6a5acd;
+  transition-duration: 0.3s;
+  padding-right: 10px;
+  overflow: hidden;
+}
+
+.item-thriller__up::after,
+.item-drama__up::after,
+.item-fantasy__up::after {
+  content: "^";
+  position: absolute;
+  bottom: -100%;
+  right: 0;
+  transition-duration: 0.3s;
+  transition-delay: 0.1s;
+  color: #f6c700;
+}
+
+.item-thriller__up:hover,
+.item-drama__up:hover,
+.item-fantasy__up:hover {
+  color: #f6c700;
+}
+
+.item-thriller__up:hover::after,
+.item-drama__up:hover::after,
+.item-fantasy__up:hover::after {
+  bottom: 20%;
+}
+
+.item-thriller__online,
+.item-drama__online,
+.item-fantasy__online {
+  display: flex;
+  column-gap: 30px;
+  justify-content: center;
+  align-items: center;
+  align-self: flex-end;
+  overflow: hidden;
+}
+
+.item-thriller__online span,
+.item-drama__online span,
+.item-fantasy__online span {
+  padding: 5px;
+}
+
+.item-thriller__link,
+.item-drama__link,
+.item-fantasy__link {
+  max-width: 100px;
+  overflow: hidden;
+  border-radius: 10px;
+}
+
+.item-thriller__link img,
+.item-drama__link img,
+.item-fantasy__link img {
+  max-width: 100%;
+  transition-duration: 0.3s;
+}
+
+.item-thriller__link img:hover,
+.item-drama__link img:hover,
+.item-fantasy__link img:hover {
+  transform: scale(2.7);
+}
+
+/* =====================FOOTER================= */
+
+.footer {
+  background-color: #696969;
+}
+
+.footer__container {
+  height: 275px;
+  display: flex;
+  flex-direction: column;
+}
+
+.footer__top {
+  flex: 1 1 auto;
+  padding: 40px 0;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+}
+
+.top-footer {
+  display: flex;
+  justify-content: space-between;
+  gap: 50px;
+}
+
+.navigation-top-footer {
+  width: 100%;
+}
+
+.navigation-top-footer__list {
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+}
+
+.navigation-top-footer__link {
+  color: rgba(255, 255, 255, 0.5);
+  transition-duration: 0.3s;
+  padding: 5px;
+}
+
+.navigation-top-footer__link:hover {
+  text-decoration: underline;
+  letter-spacing: 1px;
+  color: rgba(255, 255, 255, 1);
+}
+
+.social-top-footer {
+  display: flex;
+  gap: 30px;
+  background-color: rgba(255, 255, 255, 1);
+  border-radius: 10px;
+  padding: 10px 20px;
+  height: 60px;
+}
+
+.social-top-footer__item {
+  width: 40px;
+  height: 40px;
+  padding: 5px;
+}
+
+.social-top-footer__item img {
+  width: 100%;
+  transition-duration: 0.3s;
+}
+
+.social-top-footer__item img:hover {
+  transform: scale(1.1);
+}
+
+.footer__bottom {
+  font-family: "Larsseit";
+  text-align: center;
+  padding: 30px 0;
+  font-size: 13px;
+  letter-spacing: 1px;
+  color: rgba(255, 255, 255, 0.3);
+}
+
+.link-navigation-top-footer-second {
+  display: inline-block;
+  transform: translateY(35px);
+}
+
+.link-navigation-top-footer-third {
+  display: inline-block;
+  transform: translateY(70px);
+}
+
+.link-navigation-top-footer-fourth {
+  display: inline-block;
+  transform: translateY(105px);
+}
+
+/* ============================================ */
