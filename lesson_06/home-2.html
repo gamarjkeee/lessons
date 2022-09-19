@@ -1,0 +1,461 @@
+<!DOCTYPE html>
+<html lang="uk">
+  <head>
+    <link rel="stylesheet" href="css/home-2.css" />
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0"
+    />
+    <title>lesson_06 homework part two</title>
+  </head>
+  <body>
+    <div class="wrapper">
+      <header id="top" class="header">
+        <div class="header__container">
+          <nav class="header__menu menu">
+            <ul id="menu" class="menu__list">
+              <li class="menu__item">
+                <a href="#width" class="menu__link menu__link-active">width</a>
+              </li>
+              <li class="menu__item">
+                <a href="#height" class="menu__link">height</a>
+              </li>
+              <li class="menu__item">
+                <a href="#display" class="menu__link">display</a>
+              </li>
+              <li class="menu__item">
+                <a href="#border" class="menu__link">border</a>
+              </li>
+              <li class="menu__item">
+                <a href="#outline" class="menu__link">outline</a>
+              </li>
+              <li class="menu__item">
+                <a href="#box-shadow" class="menu__link">box-shadow</a>
+              </li>
+              <li class="menu__item">
+                <a href="#border-radius" class="menu__link">border-radius</a>
+              </li>
+              <li class="menu__item">
+                <a href="#overflow" class="menu__link">overflow</a>
+              </li>
+              <li class="menu__item">
+                <a href="#opacity" class="menu__link">opacity</a>
+              </li>
+              <li class="menu__item">
+                <a href="#visibility" class="menu__link">visibility</a>
+              </li>
+            </ul>
+          </nav>
+        </div>
+      </header>
+      <main class="page">
+        <section id="width" class="page__width width">
+          <div class="width__container">
+            <h2 class="width__title title">width, max-width, min-width</h2>
+            <div class="width__items">
+              <div class="width__item width__item-1 item-width">
+                <h3 class="item-width__title">
+                  <span>width</span> - чітко задає ширину блочного
+                  (блочно-рядкового) об'єкту. НЕ працює зі рядковими об'єктами
+                </h3>
+                <div class="item-width__body">
+                  <div class="item-width-green">width: 100px;</div>
+                  <div class="item-width-red">width: 300px;</div>
+                  <div class="item-width-blue">width: 700px;</div>
+                </div>
+              </div>
+              <div class="width__item width__item-2 item-width">
+                <h3 class="item-width__title">
+                  <span>max-width</span> - встановлює максимальну ширину блочних
+                  (блочно-рядкових) тегів. НЕ працює з рядковими об'єктами
+                </h3>
+                <div class="item-max-width__body">
+                  <div class="item-max-width-green">max-width: 250px;</div>
+                  <div class="item-max-width-red">
+                    max-width: 250px; content
+                  </div>
+                  <div class="item-max-width-blue">
+                    max-width: 250px; content content content content content
+                    content
+                  </div>
+                </div>
+              </div>
+              <div class="width__item width__item-3 item-width">
+                <h3 class="item-width__title">
+                  <span>min-width </span> - становлює мінімальну ширину блочних
+                  (блочно-рядкових) тегів. НЕ працює з рядковими об'єктами
+                </h3>
+                <div class="item-min-width__body">
+                  <div class="item-min-width-green">min-width: 300px;</div>
+                  <div class="item-min-width-red">
+                    min-width: 300px; content
+                  </div>
+                  <div class="item-min-width-blue">
+                    min-width: 300px; content content content content content
+                    content
+                  </div>
+                </div>
+              </div>
+            </div>
+            <a href="#top" class="item-width__button">На початок сторінки</a>
+          </div>
+        </section>
+        <section id="height" class="page__height height">
+          <div class="height__container">
+            <h2 class="height__title title">height, max-height, min-height</h2>
+            <div class="height__items">
+              <div class="height__item height__item-1 item-height">
+                <h3 class="item-height__title">
+                  <span>height</span> - встановлює чітку висоту блочних
+                  (блочно-рядкових) тегів. НЕ працює зі рядковими об'єктами
+                </h3>
+                <div class="item-height__body">
+                  <div class="item-height-green">height: 100px;</div>
+                  <div class="item-height-red">height: 300px;</div>
+                  <div class="item-height-blue">height: 700px;</div>
+                </div>
+              </div>
+              <div class="height__item height__item-2 item-height">
+                <h3 class="item-height__title">
+                  <span>max-height</span> - встановлює максимальну висоту
+                  блочних (блочно-рядкових) тегів. НЕ працює зі рядковими
+                  об'єктами
+                </h3>
+                <div class="item-max-height__body">
+                  <div class="item-max-height-green">max-height: 150px;</div>
+                  <div class="item-max-height-red">
+                    max-height: 150px; content content content content content
+                    content content content content
+                  </div>
+                  <div class="item-max-height-blue">
+                    max-height: 150px; content content content content content
+                    content content content content content content content
+                    content content content content content content
+                  </div>
+                </div>
+              </div>
+              <div class="height__item height__item-3 item-height">
+                <h3 class="item-height__title">
+                  <span>min-height </span> - встановлює мінімальну висоту
+                  блочних (блочно-рядкових) тегів. НЕ працює зі рядковими
+                  об'єктами
+                </h3>
+                <div class="item-min-height__body">
+                  <div class="item-min-height-green">min-height: 150px;</div>
+                  <div class="item-min-height-red">
+                    min-height: 150px; content content content
+                  </div>
+                  <div class="item-min-height-blue">
+                    min-height: 150px; content content content content content
+                    content content content content content content content
+                    content content content content content content content
+                  </div>
+                </div>
+              </div>
+            </div>
+            <a href="#top" class="item-height__button">На початок сторінки</a>
+          </div>
+        </section>
+        <section id="display" class="page__display display">
+          <div class="display__container">
+            <h2 class="display__title title">display</h2>
+            <div class="display__items">
+              <div class="display__item item-display">
+                <h3 class="item-display__title">block</h3>
+                <div class="item-display__block">
+                  content content content content content
+                </div>
+              </div>
+              <div class="display__item item-display">
+                <h3 class="item-display__title">inline</h3>
+                <div class="item-display__inline">
+                  content content content content content
+                </div>
+              </div>
+              <div class="display__item item-display">
+                <h3 class="item-display__title">inline-block</h3>
+                <div class="item-display__inline-block">
+                  content content content content content
+                </div>
+              </div>
+              <div class="display__item item-display">
+                <h3 class="item-display__title">
+                  none (так, блок тут теж був (= )
+                </h3>
+                <div class="item-display__none">
+                  content content content content content
+                </div>
+              </div>
+            </div>
+            <a href="#top" class="item-display__button">На початок сторінки</a>
+          </div>
+        </section>
+        <section id="border" class="page__border border">
+          <div class="border__container">
+            <h2 class="border__title title">border</h2>
+            <div class="border__items">
+              <div class="border__item item-border">
+                <h3 class="item-border__title">solid</h3>
+                <div class="item-border__solid item-border__solid-1 item">
+                  1
+                </div>
+                <div class="item-border__solid item-border__solid-2 item">
+                  2
+                </div>
+                <div class="item-border__solid item-border__solid-3 item">
+                  3
+                </div>
+              </div>
+              <div class="border__item item-border">
+                <h3 class="item-border__title">dotted</h3>
+                <div class="item-border__dotted item-border__dotted-1 item">
+                  1
+                </div>
+                <div class="item-border__dotted item-border__dotted-2 item">
+                  2
+                </div>
+                <div class="item-border__dotted item-border__dotted-3 item">
+                  3
+                </div>
+              </div>
+              <div class="border__item item-border">
+                <h3 class="item-border__title">dashed</h3>
+                <div class="item-border__dashed item-border__dashed-1 item">
+                  1
+                </div>
+                <div class="item-border__dashed item-border__dashed-2 item">
+                  2
+                </div>
+                <div class="item-border__dashed item-border__dashed-3 item">
+                  3
+                </div>
+              </div>
+              <div class="border__item item-border">
+                <h3 class="item-border__title">double</h3>
+                <div class="item-border__double item-border__double-1 item">
+                  1
+                </div>
+                <div class="item-border__double item-border__double-2 item">
+                  2
+                </div>
+                <div class="item-border__double item-border__double-3 item">
+                  3
+                </div>
+              </div>
+              <div class="border__item item-border">
+                <h3 class="item-border__title">others</h3>
+                <div class="item-border__others item-border__others-1 item">
+                  1
+                </div>
+                <div class="item-border__others item-border__others-2 item">
+                  2
+                </div>
+                <div class="item-border__others item-border__others-3 item">
+                  3
+                </div>
+              </div>
+            </div>
+            <a href="#top" class="item-border__button">На початок сторінки</a>
+          </div>
+        </section>
+        <section id="outline" class="page__outline outline">
+          <div class="outline__container">
+            <h2 class="outline__title title">outline</h2>
+            <div class="outline__items">
+              <div class="outline__item item-outline">
+                <h3 class="item-outline__title">solid</h3>
+                <div class="item-outline__solid item-outline__solid-1 item">
+                  1
+                </div>
+                <div class="item-outline__solid item-outline__solid-2 item">
+                  2
+                </div>
+                <div class="item-outline__solid item-outline__solid-3 item">
+                  3
+                </div>
+              </div>
+              <div class="outline__item item-outline">
+                <h3 class="item-outline__title">dotted</h3>
+                <div class="item-outline__dotted item-outline__dotted-1 item">
+                  1
+                </div>
+                <div class="item-outline__dotted item-outline__dotted-2 item">
+                  2
+                </div>
+                <div class="item-outline__dotted item-outline__dotted-3 item">
+                  3
+                </div>
+              </div>
+              <div class="outline__item item-outline">
+                <h3 class="item-outline__title">dashed</h3>
+                <div class="item-outline__dashed item-outline__dashed-1 item">
+                  1
+                </div>
+                <div class="item-outline__dashed item-outline__dashed-2 item">
+                  2
+                </div>
+                <div class="item-outline__dashed item-outline__dashed-3 item">
+                  3
+                </div>
+              </div>
+              <div class="outline__item item-outline">
+                <h3 class="item-outline__title">double</h3>
+                <div class="item-outline__double item-outline__double-1 item">
+                  1
+                </div>
+                <div class="item-outline__double item-outline__double-2 item">
+                  2
+                </div>
+                <div class="item-outline__double item-outline__double-3 item">
+                  3
+                </div>
+              </div>
+              <div class="outline__item item-outline">
+                <h3 class="item-outline__title">others</h3>
+                <div class="item-outline__others item-outline__others-1 item">
+                  1
+                </div>
+                <div class="item-outline__others item-outline__others-2 item">
+                  2
+                </div>
+                <div class="item-outline__others item-outline__others-3 item">
+                  3
+                </div>
+              </div>
+            </div>
+            <a href="#top" class="item-outline__button">На початок сторінки</a>
+          </div>
+        </section>
+        <section id="box-shadow" class="page__box-shadow box-shadow">
+          <div class="box-shadow__container">
+            <h2 class="box-shadow__title title">box-shadow</h2>
+            <div class="box-shadow__items">
+              <div class="box-shadow__item box-shadow__item-1">
+                box-shadow: 0 0 10px #000;
+              </div>
+              <div class="box-shadow__item box-shadow__item-2">
+                box-shadow: -15px -15px 20px #000;
+              </div>
+              <div class="box-shadow__item box-shadow__item-3">
+                box-shadow: inset 0 0 10px #000;
+              </div>
+              <div class="box-shadow__item box-shadow__item-4">
+                box-shadow: inset -15px -15px 20px #000;
+              </div>
+            </div>
+            <a href="#top" class="box-shadow__button">На початок сторінки</a>
+          </div>
+        </section>
+        <section id="border-radius" class="page__border-radius border-radius">
+          <div class="border-radius__container">
+            <h2 class="border-radius__title title">border-radius</h2>
+            <div class="border-radius__items">
+              <div class="border-radius__item border-radius__item-1">
+                border-radius: 20px;
+              </div>
+              <div class="border-radius__item border-radius__item-2">
+                border-radius: 50%;
+              </div>
+              <div class="border-radius__item border-radius__item-3">
+                border-radius: 0% 100% 45% 55% / 0% 55% 45% 100%;
+              </div>
+              <div class="border-radius__item border-radius__item-4">
+                border-radius: 10px 0 50px 0;
+              </div>
+            </div>
+            <a href="#top" class="border-radius__button">На початок сторінки</a>
+          </div>
+        </section>
+        <section id="overflow" class="page__overflow overflow">
+          <div class="overflow__container">
+            <h2 class="overflow__title title">overflow</h2>
+            <div class="overflow__items">
+              <div class="overflow__item overflow__item-1">
+                content content content content content content content content
+                content content content content content content content content
+                content content content content
+                <span>visible</span>
+                content content content content content content content content
+                content content content content content content content content
+                content content content content
+              </div>
+              <div class="overflow__item overflow__item-2">
+                content content content content content content content content
+                content content content content content content content content
+                content content content content <span>hidden</span>
+                content content content content content content content content
+                content content content content content content content content
+                content content content content
+              </div>
+              <div class="overflow__item overflow__item-3">
+                content content content content content content content content
+                content content content content content content content content
+                content content content content
+                <span>scroll</span>
+                content content content content content content content content
+                content content content content content content content content
+                content content content content
+              </div>
+              <div class="overflow__item overflow__item-4">
+                content content content content content content content content
+                content content content content content content content content
+                content content content content
+                <span>auto</span>
+                content content content content content content content content
+                content content content content content content content content
+                content content content content
+              </div>
+            </div>
+            <a href="#top" class="overflow__button">На початок сторінки</a>
+          </div>
+        </section>
+        <section id="opacity" class="page__opacity opacity">
+          <div class="opacity__container">
+            <h2 class="opacity__title title">opacity</h2>
+            <div class="opacity__items">
+              <div class="opacity__item opacity__item-1"></div>
+              <div class="opacity__item opacity__item-2"></div>
+              <div class="opacity__item opacity__item-3"></div>
+              <div class="opacity__item opacity__item-4"></div>
+            </div>
+            <a href="#top" class="opacity__button">На початок сторінки</a>
+          </div>
+        </section>
+        <section id="visibility" class="page__visibility visibility">
+          <div class="visibility__container">
+            <h2 class="visibility__title title">visibility</h2>
+            <div class="visibility__items">
+              <div class="visibility__item">
+                <h3 class="visibility__item-title">visible</h3>
+                <div class="visibility__item-block visibility__item-block-1">
+                  block
+                </div>
+              </div>
+              <div class="visibility__item">
+                <h3 class="visibility__item-title">hidden</h3>
+                <div class="visibility__item-block visibility__item-block-2">
+                  block
+                </div>
+              </div>
+            </div>
+            <a href="#top" class="visibility__button">На початок сторінки</a>
+          </div>
+        </section>
+      </main>
+      <footer class="footer">
+        <div class="footer__container">
+          <div class="footer__top top-footer"></div>
+          <div class="footer__bottom">
+            <a href="index.html" class="footer__wave-button wave-button"
+              ><span class="wave-button__text">to main page</span>
+              <span class="wave-button__waves"></span>
+            </a>
+          </div>
+        </div>
+      </footer>
+    </div>
+    <script src="js/script.js"></script>
+  </body>
+</html>
