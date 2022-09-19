@@ -6,5 +6,5 @@ lesson_04 - https://gamarjkeee.github.io/lessons/lesson_04
 
 lesson_05 - https://gamarjkeee.github.io/lessons/lesson_05
 
-lesson_06 - 
+lesson_06 - https://gamarjkeee.github.io/lessons/lesson_06
 
