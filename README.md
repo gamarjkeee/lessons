@@ -8,3 +8,5 @@ lesson_05 - https://gamarjkeee.github.io/lessons/lesson_05
 
 lesson_06 - https://gamarjkeee.github.io/lessons/lesson_06
 
+lesson_07 - https://gamarjkeee.github.io/lessons/lesson_07
+
