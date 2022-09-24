@@ -186,7 +186,7 @@ body {
   animation: btn linear 1s infinite;
 }
 
-.footer__link__link:hover {
+.footer__link:hover {
   background: #ffffff;
   color: #ff3f3a;
 }
