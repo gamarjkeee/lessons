@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <link rel="stylesheet" href="css/backgrounds.css" />
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0"
+    />
+    <link rel="icon" href="img/favicon.ico" />
+    <title>lesson_07 homework part-2</title>
+  </head>
+  <body>
+    <div class="wrapper">
+      <header class="header">
+        <div class="header__body">
+          <nav class="header__menu menu">
+            <ul id="menu" class="menu__list">
+              <li class="menu__item">
+                <a href="#color" class="menu__link menu__link-active"
+                  >background-color</a
+                >
+              </li>
+              <li class="menu__item">
+                <a href="#gradient" class="menu__link"
+                  >background-image: linear-gradient</a
+                >
+              </li>
+              <li class="menu__item">
+                <a href="#image" class="menu__link">background-image</a>
+              </li>
+              <li class="menu__item">
+                <a href="#repeat" class="menu__link">background-repeat</a>
+              </li>
+              <li class="menu__item">
+                <a href="#position" class="menu__link"> background-position</a>
+              </li>
+              <li class="menu__item">
+                <a href="#attachment" class="menu__link"
+                  >background-attachment</a
+                >
+              </li>
+              <li class="menu__item">
+                <a href="#size" class="menu__link">background-size</a>
+              </li>
+              <li class="menu__item">
+                <a href="#background" class="menu__link"
+                  >Універсальна властивість - background</a
+                >
+              </li>
+            </ul>
+          </nav>
+        </div>
+      </header>
+      <main class="backgrounds">
+        <div class="backgrounds__container">
+          <div id="color" class="backgrounds__item backgrounds__item-1">
+            background-color: green;
+          </div>
+          <div id="gradient" class="backgrounds__item backgrounds__item-2">
+            background: linear-gradient( 135deg, rgba(25, 255, 0, 1) 0%, rgba(0,
+            140, 255, 1) 75% );
+          </div>
+          <div id="image" class="backgrounds__item backgrounds__item-3">
+            background-image: url("../img/backgrounds/image.jpg");
+            background-size: cover; background-repeat: no-repeat;
+          </div>
+          <div id="repeat" class="backgrounds__item backgrounds__item-4">
+            background: #ffffff url("../img/backgrounds/repeat_02.webp");
+            background-repeat: repeat; color: green;
+          </div>
+          <div id="position" class="backgrounds__item backgrounds__item-5">
+            background-image: url("../img/backgrounds/image.jpg");
+            background-position: center;
+          </div>
+          <div id="attachment" class="backgrounds__item backgrounds__item-6">
+            background-image: url("../img/backgrounds/image.jpg");
+            background-attachment: fixed;
+          </div>
+          <div id="size" class="backgrounds__item backgrounds__item-7">
+            background-image: url("../img/backgrounds/image.jpg");
+            background-size: contain;
+          </div>
+          <div id="background" class="backgrounds__item backgrounds__item-8">
+            Універсальна властивість - background <br />
+            background: #ffffff url("../img/backgrounds/image.jpg") center /
+            cover no-repeat;
+          </div>
+        </div>
+      </main>
+      <footer class="footer">
+        <div class="footer__container">
+          <a href="index.html" class="footer__link">Назад до статті</a>
+        </div>
+      </footer>
+    </div>
+    <script src="js/script.js"></script>
+  </body>
+</html>
