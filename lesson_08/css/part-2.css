@@ -1,0 +1,879 @@
+/* ============================================ */
+
+@import url("null.css");
+
+/* ============================================ */
+
+@import url("https://fonts.googleapis.com/css?family=Lato:regular,700,900&display=swap");
+
+/* ============================================ */
+
+body {
+  height: 100%;
+  font-family: "Lato", sans-serif;
+  color: #424551;
+}
+
+/* ============================================ */
+
+.wrapper {
+  min-height: 100vh;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+}
+
+/* ============================================ */
+
+[class*="__container"] {
+  max-width: 1260px;
+  margin: 0 auto;
+  padding: 0 15px;
+}
+
+/* ============================================ */
+
+.title {
+  text-align: center;
+  font-size: 50px;
+  font-weight: 700;
+  margin-bottom: 50px;
+  color: #000;
+}
+
+.subtitle {
+  text-align: center;
+  font-size: 35px;
+  font-weight: 700;
+  margin-bottom: 30px;
+  color: red;
+}
+
+/* ================== HEADER ================== */
+
+.header {
+  padding: 20px 0;
+  background-color: rgba(255, 0, 0, 0.3);
+  position: fixed;
+}
+
+.heafer__container {
+  width: 200px;
+  height: 100vh;
+  position: relative;
+}
+
+.menu__list {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  column-gap: 75px;
+  row-gap: 20px;
+  flex-wrap: wrap;
+}
+
+.menu__link {
+  color: #ffffff;
+  font-size: 20px;
+  text-shadow: 0 0 2px rgba(255, 0, 0, 0.5);
+  transition-duration: 0.3s;
+}
+
+.menu__link:hover {
+  color: red;
+  text-decoration: underline;
+}
+
+.menu__link-active {
+  color: red;
+}
+
+.header__linktopart-2 {
+  position: absolute;
+  right: 0;
+  bottom: 100px;
+  padding: 30px 20px;
+  background: linear-gradient(55.95deg, #ff3f3a 0%, #f75e05 100%);
+  border: 2px solid #ffffff;
+  color: #ffffff;
+  text-transform: uppercase;
+  font-size: 18px;
+  line-height: 1.5;
+  font-weight: 900;
+  animation: link 1s 3;
+  text-align: center;
+  transition-duration: 0.3s;
+}
+
+.header__linktopart-2:hover {
+  background: #ffffff;
+  border: 2px solid #ff3f3a;
+  color: #ff3f3a;
+}
+
+/* ================== PAGE =================== */
+
+.page {
+}
+
+.page__hover {
+}
+
+.page__active {
+}
+
+.page__visited {
+}
+
+.page__focus {
+}
+
+.page__target {
+}
+
+.page__not {
+}
+
+.page__child {
+}
+
+.page__before {
+}
+
+/* ================= HOVER =================== */
+
+.hover {
+  padding: 50px 0;
+  background-color: rgba(0, 255, 0, 0.2);
+}
+
+.hover__game {
+  height: 600px;
+  width: 100%;
+  background-color: red;
+  border: 2px solid red;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  position: relative;
+  animation: body 3s;
+}
+
+.hover__game::before {
+  content: "Наведи на мене курсор";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: #ffffff;
+  font-size: 40px;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+}
+
+.hover__game:hover::before {
+  display: none;
+}
+
+@keyframes body {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+.hover__item {
+  visibility: hidden;
+  width: 100%;
+  height: 20px;
+  background-color: #ffffff;
+  cursor: grabbing;
+}
+
+.hover__game:hover .hover__item-0 {
+  visibility: visible;
+}
+
+.hover__item-0:hover .hover__item-1 {
+  visibility: visible;
+}
+
+.hover__item-1:hover .hover__item-2 {
+  visibility: visible;
+}
+
+.hover__item-2:hover .hover__item-3 {
+  visibility: visible;
+}
+
+.hover__item-3:hover .hover__item-4 {
+  visibility: visible;
+}
+
+.hover__item-4:hover .hover__item-5 {
+  visibility: visible;
+}
+
+.hover__item-5:hover .hover__item-6 {
+  visibility: visible;
+}
+
+.hover__item-6:hover .hover__item-7 {
+  visibility: visible;
+}
+
+.hover__item-7:hover .hover__item-8 {
+  visibility: visible;
+}
+
+.hover__item-8:hover .hover__item-9 {
+  visibility: visible;
+}
+
+.hover__item-9:hover .hover__item-10 {
+  visibility: visible;
+}
+
+.hover__item-0 {
+  position: absolute;
+  width: 50px;
+  height: 50px;
+}
+
+.hover__item-0:hover::before {
+  display: none;
+}
+
+.hover__item-0::before {
+  content: "тепер на мене";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: red;
+  font-size: 10px;
+  text-align: center;
+  line-height: 1.3;
+  text-transform: uppercase;
+}
+
+.hover__item-1 {
+  position: absolute;
+  left: 50px;
+  width: 150px;
+  height: 15px;
+}
+
+.hover__item-1:hover::before {
+  display: none;
+}
+
+.hover__item-1::before {
+  content: "не виходь за кордони";
+  position: absolute;
+  top: 50%;
+  left: 10px;
+  transform: translatey(-50%);
+  color: red;
+  font-size: 10px;
+  text-align: center;
+  line-height: 1.3;
+  text-transform: uppercase;
+}
+
+.hover__item-2 {
+  position: absolute;
+  top: 15px;
+  right: 0;
+  width: 40px;
+  height: 40px;
+}
+
+.hover__item-3 {
+  position: absolute;
+  top: 40px;
+  left: 10px;
+  width: 20px;
+  height: 60px;
+}
+
+.hover__item-4 {
+  position: absolute;
+  top: 60px;
+  left: 0;
+  width: 400px;
+  height: 100px;
+}
+
+.hover__item-4:hover::before {
+  display: none;
+}
+
+.hover__item-4::before {
+  content: "зоcередься, у тебе все вийде";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: red;
+  font-size: 25px;
+  text-align: center;
+  line-height: 1.3;
+  text-transform: uppercase;
+}
+
+.hover__item-5 {
+  position: absolute;
+  top: 40px;
+  left: 400px;
+  width: 500px;
+  height: 20px;
+}
+
+.hover__item-6 {
+  position: absolute;
+  top: 0px;
+  left: 500px;
+  width: 35px;
+  height: 150px;
+}
+
+.hover__item-7 {
+  position: absolute;
+  top: 150px;
+  right: 0;
+  width: 500px;
+  height: 30px;
+}
+
+.hover__item-8 {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 15px;
+  height: 220px;
+}
+
+.hover__item-8:hover::before {
+  display: none;
+}
+
+.hover__item-8::before {
+  content: "Ще зовсім трішки";
+  position: absolute;
+  top: 50px;
+  left: 50%;
+  transform: translatex(-50%);
+  color: red;
+  font-size: 10px;
+  text-align: center;
+  line-height: 1.3;
+  writing-mode: vertical-rl;
+  text-transform: uppercase;
+}
+
+.hover__item-9 {
+  position: absolute;
+  top: 220px;
+  left: -12.5px;
+  width: 40px;
+  height: 40px;
+}
+
+.hover__item-9:hover::before {
+  display: none;
+}
+
+.hover__item-9::before {
+  content: "УРА";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: red;
+  font-size: 12px;
+  text-align: center;
+  line-height: 1.3;
+  text-transform: uppercase;
+}
+
+.hover__item-10 {
+  position: absolute;
+  top: -547px;
+  left: -615px;
+  width: 1230px;
+  height: 600px;
+  background: url("../img/part-2/victoria-secret.webp") center / cover;
+  cursor: not-allowed;
+}
+
+/* ================ ACTIVE =================== */
+
+.active {
+  padding: 50px 0;
+  background-color: rgba(255, 20, 147, 0.2);
+}
+
+.active__item-1 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.active__item-1 span {
+  font-size: 20px;
+  font-weight: 700;
+  cursor: pointer;
+  display: inline-block;
+  padding: 5px 10px;
+}
+
+.active__item-1 span:active {
+  text-decoration: underline;
+}
+
+.active__item-1 span:active ~ .active__item-item-1 {
+  visibility: visible;
+}
+
+.active__item-item-1 {
+  padding-top: 20px;
+  visibility: hidden;
+}
+
+.active__item-item-1 img {
+  max-width: 100%;
+}
+
+.footer {
+  height: 300px;
+  background-color: #424551;
+}
+
+/* =============== VISITED =================== */
+
+.visited {
+  padding: 50px 0;
+  background-color: rgba(0, 255, 255, 0.2);
+}
+
+.visited__container {
+  height: 400px;
+}
+
+.visited__items {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.visited__link {
+  font-size: 40px;
+  display: inline-block;
+  text-decoration: underline;
+}
+
+.visited__link-1 {
+  margin-right: 50px;
+}
+.visited__link-1:visited {
+  color: fuchsia;
+}
+
+.visited__link-2 {
+}
+
+.visited__link-2:visited {
+  color: fuchsia;
+}
+
+/* ================ FOCUS ==================== */
+
+.focus {
+  padding: 50px 0;
+  background-color: rgba(0, 255, 0, 0.2);
+}
+
+.focus__body {
+  display: flex;
+  gap: 50px;
+  justify-content: center;
+  align-items: center;
+}
+
+.focus__item-1 {
+  position: relative;
+}
+
+.focus__item-1 span,
+.focus__item-2 span {
+  position: absolute;
+  top: 30%;
+  left: 120px;
+  width: 100%;
+  height: 100%;
+  font-weight: 700;
+  color: red;
+  opacity: 0;
+}
+
+.focus__input-1:focus ~ span {
+  opacity: 1;
+}
+
+.focus__input-2:focus ~ span {
+  animation: span 0.5s 1s forwards;
+}
+
+@keyframes span {
+  0% {
+    opacity: 0;
+  }
+
+  70% {
+    opacity: 0.6;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+.focus__item-2 {
+  position: relative;
+}
+
+.focus__input {
+  padding: 10px 20px;
+  width: 300px;
+  border: 2px solid gray;
+  border-radius: 5px;
+}
+
+.focus__input::placeholder {
+  color: gray;
+  font-size: 14px;
+  letter-spacing: 1px;
+}
+
+.focus__input:focus::placeholder {
+  opacity: 0;
+}
+
+.focus__input:focus {
+  outline: none;
+}
+
+.focus__input-1,
+.focus__input-2 {
+  position: relative;
+  z-index: 2;
+  background-color: rgba(255, 255, 255, 0);
+}
+
+.focus__input-1:focus {
+  border: 2px solid red;
+  box-shadow: 0 0 20px red;
+}
+
+.focus__input-2:focus {
+  transition-duration: 1s;
+  border: 2px solid red;
+  animation: focus 0.5s linear, scale 0.5s linear 0.5s forwards;
+}
+
+@keyframes focus {
+  0% {
+    transform: rotate(0deg);
+  }
+
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes scale {
+  0% {
+    transform: scale(1);
+  }
+
+  70% {
+    transform: scale(1.1);
+  }
+  100% {
+    transform: scale(1);
+    box-shadow: 0 0 20px red;
+  }
+}
+
+/* =============== TARGET ==================== */
+
+.target {
+  padding: 50px 0;
+  background-color: rgba(255, 20, 147, 0.2);
+}
+
+.target__link {
+  display: inline-block;
+  font-size: 18px;
+  font-weight: 700;
+  padding: 10px;
+  border-radius: 5px;
+  background-color: #ff3f3a;
+  color: #ffffff;
+  line-height: 1.3;
+  letter-spacing: 1px;
+}
+
+.target__link:hover {
+  text-decoration: underline;
+}
+
+.target__body {
+  height: 300px;
+  width: 100%;
+  background-color: rgba(210, 105, 30, 0.5);
+  display: none;
+}
+
+.target__body:target {
+  display: block;
+}
+
+/* ================= NOT ===================== */
+
+.not {
+  padding: 50px 0;
+  background-color: rgba(0, 255, 255, 0.2);
+}
+
+.not__container {
+}
+
+.not__title {
+}
+
+.not__body {
+}
+
+.not__item {
+  text-align: center;
+  font-size: 20px;
+  padding: 20px;
+  height: 100px;
+  background-color: #f75e05;
+}
+
+.not__item:not(:last-child) {
+  margin-bottom: 10px;
+}
+
+/* ================ CHILD ==================== */
+
+.child {
+  padding: 50px 0;
+  background-color: rgba(0, 255, 0, 0.2);
+}
+
+.child__body {
+  background-color: #ffffff;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 15px;
+  padding: 15px;
+}
+
+.child__item {
+  background-color: rgba(0, 255, 0, 0.2);
+  height: 100px;
+  text-align: center;
+  padding: 20px;
+  font-size: 18px;
+  font-weight: 700;
+  transition-duration: 0.3s;
+}
+
+.child__item:first-child {
+  background-color: rgba(0, 255, 0, 0.4);
+}
+
+.child__item:last-child {
+  background-color: rgba(255, 0, 0, 0.4);
+}
+
+.child__item:nth-child(odd) {
+  color: #ff3f3a;
+}
+
+.child__item:nth-child(even) {
+  text-transform: uppercase;
+}
+
+.child__item:nth-child(5) {
+  background-color: rgba(0, 255, 0, 0.6);
+}
+
+.child__item:hover {
+  transform: scale(1.05);
+}
+
+/* ================ TYPE ===================== */
+
+.page__type {
+  padding: 50px 0;
+  background-color: rgba(255, 20, 147, 0.2);
+}
+
+.type__body {
+  background-color: #ffffff;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 15px;
+  padding: 15px;
+}
+
+.type__item {
+  background-color: rgba(255, 20, 147, 0.2);
+  height: 100px;
+  text-align: center;
+  padding: 20px;
+  font-size: 18px;
+  font-weight: 700;
+  transition-duration: 0.3s;
+}
+
+.type__body div:first-of-type {
+  text-transform: uppercase;
+  color: #ff3f3a;
+  background-color: rgba(255, 20, 147, 0.4);
+}
+
+.type__body p:first-of-type {
+  text-decoration: underline;
+  color: green;
+}
+
+.type__body div:last-of-type {
+  text-transform: uppercase;
+  color: #ffffff;
+  background-color: rgba(255, 20, 147, 0.6);
+}
+
+.type__body p:last-of-type {
+  text-decoration: underline;
+  color: white;
+  text-transform: uppercase;
+  background-color: blueviolet;
+}
+
+.type__item:hover {
+  transform: scale(1.05);
+}
+
+/* =============== BEFORE ==================== */
+
+.before {
+  padding: 50px 0;
+  background-color: rgba(0, 255, 255, 0.2);
+}
+
+.before__container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.before__title {
+}
+
+.before__item {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  height: 140px;
+  width: 560px;
+  background-color: #f75e05;
+  color: #ffffff;
+  font-size: 30px;
+  font-weight: 700;
+  position: relative;
+}
+
+.before__item::before {
+  content: "Я ::before 👍";
+  position: absolute;
+  top: 20px;
+  right: 10px;
+  width: 100px;
+  height: 100px;
+  background-color: #ffffff;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  color: #f75e05;
+  font-size: 20px;
+  line-height: 1.4;
+}
+
+.before__item::after {
+  content: "Я ::after 😛";
+  position: absolute;
+  top: 20px;
+  left: 10px;
+  width: 100px;
+  height: 100px;
+  background-color: #ffffff;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  color: #f75e05;
+  font-size: 20px;
+  line-height: 1.4;
+}
+
+.before__item span:first-child {
+  position: absolute;
+  top: 20px;
+  left: 10px;
+  width: 100px;
+  height: 100px;
+  background-color: red;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  z-index: 2;
+}
+
+.before__item span:last-child {
+  position: absolute;
+  top: 20px;
+  right: 10px;
+  width: 100px;
+  height: 100px;
+  background-color: red;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  z-index: 2;
+}
+
+.before__item > span:hover {
+  display: none;
+}
+
+/* =============== FOOTER ==================== */
+
+.footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 70px;
+  letter-spacing: 5px;
+  color: white;
+  text-transform: uppercase;
+}

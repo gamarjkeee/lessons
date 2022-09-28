@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <link rel="stylesheet" href="css/part-2.css" />
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0"
+    />
+    <link rel="shortcut icon" type="image/png" href="img/favicon.png" />
+    <title>lesson_08 homework part-2</title>
+  </head>
+  <body>
+    <header class="header">
+      <div class="heafer__container">
+        <nav class="header__menu menu">
+          <ul id="menu" class="menu__list">
+            <li class="menu__item">
+              <a href="#hover" class="menu__link menu__link-active">:hover</a>
+            </li>
+            <li class="menu__item">
+              <a href="#active" class="menu__link">:active</a>
+            </li>
+            <li class="menu__item">
+              <a href="#visited" class="menu__link">:visited</a>
+            </li>
+            <li class="menu__item">
+              <a href="#focus" class="menu__link">:focus</a>
+            </li>
+            <li class="menu__item">
+              <a href="#ttarget" class="menu__link">:target</a>
+            </li>
+            <li class="menu__item">
+              <a href="#not" class="menu__link">:not</a>
+            </li>
+            <li class="menu__item">
+              <a href="#child" class="menu__link">:first-child</a>
+            </li>
+            <li class="menu__item">
+              <a href="#type" class="menu__link">:first-of-type</a>
+            </li>
+            <li class="menu__item">
+              <a href="#child" class="menu__link">:last-child</a>
+            </li>
+            <li class="menu__item">
+              <a href="#type" class="menu__link">:last-of-type</a>
+            </li>
+            <li class="menu__item">
+              <a href="#child" class="menu__link">:nth-child(odd)</a>
+            </li>
+            <li class="menu__item">
+              <a href="#child" class="menu__link">:nth-child(even)</a>
+            </li>
+            <li class="menu__item">
+              <a href="#child" class="menu__link">:nth-child()</a>
+            </li>
+            <li class="menu__item">
+              <a href="#before" class="menu__link">::before</a>
+            </li>
+            <li class="menu__item">
+              <a href="#before" class="menu__link">::after</a>
+            </li>
+          </ul>
+        </nav>
+        <a href="index.html" class="header__linktopart-2"
+          >НА ПОПЕРЕДНю сторінку</a
+        >
+      </div>
+    </header>
+    <main class="page">
+      <div id="hover" class="page__hover hover">
+        <div class="hover__container">
+          <h2 class="hover__title title">:hover</h2>
+          <div class="hover__game">
+            <div class="hover__item hover__item-0">
+              <div class="hover__item hover__item-1">
+                <div class="hover__item hover__item-2">
+                  <div class="hover__item hover__item-3">
+                    <div class="hover__item hover__item-4">
+                      <div class="hover__item hover__item-5">
+                        <div class="hover__item hover__item-6">
+                          <div class="hover__item hover__item-7">
+                            <div class="hover__item hover__item-8">
+                              <div class="hover__item hover__item-9">
+                                <div class="hover__item hover__item-10"></div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div id="active" class="page__active active">
+        <div class="active__container">
+          <h2 class="active__title title">:active</h2>
+          <div class="active__body">
+            <div class="active__item active__item-1">
+              <span>Натисни на мене</span>
+              <div class="active__item-item active__item-item-1">
+                <img src="img/part-2/молодець.gif" alt="" />
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div id="visited" class="page__visited visited">
+        <div class="visited__container">
+          <h2 class="active__title title">:visited</h2>
+          <h3 class="hover__subtitle subtitle">
+            Якщо перейдеш за посиланням - воно змінить колір
+          </h3>
+          <div class="visited__items">
+            <a
+              target="_blank"
+              href="https://www.google.com.ua/search?q=%D0%A3%D0%BA%D1%80%D0%B0%D1%97%D0%BD%D0%B0&sxsrf=ALiCzsYIOtcwEloh5-ME_w0m3j4RkS_fng%3A1664302625910&ei=IT4zY7iXN6-QrgSls7KQDg&ved=0ahUKEwj4q8O2yrX6AhUviIsKHaWZDOIQ4dUDCA4&uact=5&oq=%D0%A3%D0%BA%D1%80%D0%B0%D1%97%D0%BD%D0%B0&gs_lcp=Cgdnd3Mtd2l6EAMyBAgjECcyDQguELEDEIMBENQCEEMyCAgAELEDEIMBMggIABCxAxCDATIOCC4QgAQQsQMQgwEQ1AIyBggAEAoQAzILCAAQgAQQsQMQgwEyCAguEIAEELEDMgsIABCABBCxAxCDATIICAAQsQMQgwFKBAhBGABKBAhGGABQAFgAYIAGaABwAXgAgAFYiAFYkgEBMZgBAKABAcABAQ&sclient=gws-wiz"
+              class="visited__link visited__link-1"
+              >Google</a
+            >
+            <a
+              target="_blank"
+              href="https://www.youtube.com/c/FreelancerLifeStyle"
+              class="visited__link visited__link-2"
+              >YouTube</a
+            >
+          </div>
+        </div>
+      </div>
+      <div id="focus" class="page__focus focus">
+        <div class="focus__container">
+          <h2 class="focus__title title">:focus</h2>
+          <div class="focus__body">
+            <div class="focus__item focus__item-1">
+              <input
+                class="focus__input focus__input-1"
+                type="text"
+                placeholder="Зараз я НЕ в фокусі"
+                required="required"
+              />
+              <span>А тепер я в ФОКУСІ</span>
+            </div>
+            <div class="focus__item focus__item-2">
+              <input
+                class="focus__input focus__input-2"
+                type="text"
+                placeholder="Я теж НЕ в фокусі, тицьни на мене"
+                required="required"
+              />
+              <span>Тепер ФОКУС у мене</span>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div id="ttarget" class="page__target target">
+        <div class="target__container">
+          <h2 class="target__title title">:target</h2>
+          <a href="#target" class="target__link"
+            >Тут при натисканні на мене повинен був з'явитися блок внизу з
+            текстом, але :target чомусь не спрацьовує, тому нічого не з'явиться
+            (= Можливо ментори знайдуть помилку. P.S. :target не працює і при
+            вимкнутому js файлі
+          </a>
+          <div id="target" class="target__body">
+            <div class="target__item">
+              Lorem ipsum, dolor sit amet consectetur adipisicing elit. Unde
+              reprehenderit, architecto soluta aliquam perferendis quod
+              recusandae ex officiis ad voluptatum magnam fugiat veritatis
+              sapiente ea explicabo quam illo quisquam odio!
+            </div>
+          </div>
+        </div>
+      </div>
+      <div id="not" class="page__not not">
+        <div class="not__container">
+          <h2 class="not__title title">:not</h2>
+          <div class="not__body">
+            <div class="not__item">
+              block-1 <br />
+              margin-bottom=10px
+            </div>
+            <div class="not__item">
+              block-2 <br />
+              margin-bottom=10px
+            </div>
+            <div class="not__item">
+              block-3 <br />
+              margin-bottom=10px
+            </div>
+            <div class="not__item">
+              block-4 <br />.not__item:not(:last-child) { margin-bottom: 10px; }
+              - я останній блок, тому в мене margin-bottom=0
+            </div>
+          </div>
+        </div>
+      </div>
+      <div id="child" class="page__child child">
+        <div class="child__container">
+          <h2 class="child__title title">
+            :first-child :last-child :nth-child(odd) :nth-child(even)
+            :nth-child()
+          </h2>
+          <div class="child__body">
+            <div class="child__item">1 (перша дитина)</div>
+            <div class="child__item">2 (друга дитина)</div>
+            <div class="child__item">3 (третя дитина)</div>
+            <div class="child__item">4 (четверта дитина)</div>
+            <div class="child__item">5 (п'ята дитина)</div>
+            <div class="child__item">6 (шоста дитина)</div>
+            <div class="child__item">7 (сьома дитина)</div>
+            <div class="child__item">8 (восьма дитина)</div>
+            <div class="child__item">9 (остання дитина)</div>
+          </div>
+        </div>
+      </div>
+      <div id="type" class="page__type type">
+        <div class="type__container">
+          <h2 class="type__title title">:first-of-type :last-of-type</h2>
+          <div class="type__body">
+            <div class="type__item">
+              1 (перша дитина) <br />
+              div
+            </div>
+            <p class="type__item">
+              2 (друга дитина) <br />
+              p
+            </p>
+            <div class="type__item">
+              3 (третя дитина) <br />
+              div
+            </div>
+            <div class="type__item">
+              4 (четверта дитина) <br />
+              div
+            </div>
+            <div class="type__item">
+              5 (п'ята дитина) <br />
+              div
+            </div>
+            <p class="type__item">
+              6 (остання дитина) <br />
+              p
+            </p>
+          </div>
+        </div>
+      </div>
+      <div id="before" class="page__before before">
+        <div class="before__container">
+          <h2 class="before__title title">::before ::after</h2>
+          <div class="before__item">
+            Вгадай де ::before?<span>Може я?</span><span>Може я?</span>
+          </div>
+        </div>
+      </div>
+    </main>
+    <footer class="footer">footer</footer>
+    <script src="js/part-2.js"></script>
+  </body>
+</html>
