@@ -300,7 +300,7 @@ body {
     justify-content: center;
   }
 }
-@media (max-width: 410px) {
+@media (max-width: 420px) {
   .header__buttons {
     flex-direction: column;
   }
