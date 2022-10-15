@@ -266,8 +266,8 @@ body {
           animation: main 1s linear infinite;
 }
 .car:hover .car__item--window::after {
-  -webkit-animation: item--window 10.5s 14.5s linear forwards;
-          animation: item--window 10.5s 14.5s linear forwards;
+  -webkit-animation: item--window 8.5s 16.5s linear forwards;
+          animation: item--window 8.5s 16.5s linear forwards;
 }
 .car:hover .car__text p {
   -webkit-animation: text-p 1s 25s ease forwards;
