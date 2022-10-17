@@ -186,6 +186,7 @@ body {
 @media (max-width: 767px) {
   .items {
     grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    row-gap: 40px;
   }
 }
 .item {
@@ -199,8 +200,9 @@ body {
   justify-content: space-between;
   transition-duration: 0.5s;
   background-color: #fff;
-  padding: 20px 10px 40px 10px;
-  height: calc(100vh - 150px);
+  padding: 20px 10px 60px 10px;
+  height: calc(100vh - 170px);
+  min-height: 450px;
 }
 @media (max-width: 767px) {
   .item:nth-child(5) {
@@ -315,7 +317,7 @@ body {
 }
 .item__info p {
   margin-bottom: 40px;
-  font-size: 16px;
+  font-size: 18px;
   line-height: 1.2;
 }
 @media (min-width: 768px) {
