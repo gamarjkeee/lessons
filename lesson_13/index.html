@@ -1,0 +1,476 @@
+<!DOCTYPE html>
+<html lang="uk">
+  <head>
+    <link rel="stylesheet" href="css/style.css" />
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0"
+    />
+    <link rel="shortcut icon" type="image/png" href="#" />
+    <title>lesson_13 homework</title>
+  </head>
+  <body>
+    <div id="header" class="wrapper">
+      <header class="header">
+        <div class="header__container">
+          <a href="#header" class="header__logo">logo</a>
+          <nav class="header__menu menu">
+            <ul class="menu__list">
+              <li class="menu__item">
+                <a href="#transition" class="menu__link">transition</a>
+                <ul class="menu__sub-list">
+                  <li class="menu__sub-item">
+                    <a href="#transition-duration" class="menu__sub-link"
+                      >-duration</a
+                    >
+                  </li>
+                  <li class="menu__sub-item">
+                    <a href="#transition-property" class="menu__sub-link"
+                      >-property</a
+                    >
+                  </li>
+                  <li class="menu__sub-item">
+                    <a href="#transition-delay" class="menu__sub-link"
+                      >-delay</a
+                    >
+                  </li>
+                  <li class="menu__sub-item">
+                    <a href="#transition-timing-function" class="menu__sub-link"
+                      >-timing-function</a
+                    >
+                  </li>
+                  <li class="menu__sub-item">
+                    <a
+                      href="#transition-universal-function"
+                      class="menu__sub-link"
+                      >-universal function</a
+                    >
+                  </li>
+                </ul>
+              </li>
+              <li class="menu__item">
+                <a href="#animation" class="menu__link">animation</a>
+                <ul class="menu__sub-list">
+                  <li class="menu__sub-item">
+                    <a href="#animation-name" class="menu__sub-link">-name</a>
+                  </li>
+                  <li class="menu__sub-item">
+                    <a href="#animation-duration" class="menu__sub-link"
+                      >-duration</a
+                    >
+                  </li>
+                  <li class="menu__sub-item">
+                    <a href="#animation-timing-function" class="menu__sub-link"
+                      >-timing-function</a
+                    >
+                  </li>
+                  <li class="menu__sub-item">
+                    <a href="#animation-iteration-count" class="menu__sub-link"
+                      >-iteration-count</a
+                    >
+                  </li>
+                  <li class="menu__sub-item">
+                    <a href="#animation-direction" class="menu__sub-link"
+                      >-direction</a
+                    >
+                  </li>
+                  <li class="menu__sub-item">
+                    <a href="#animation-play-state" class="menu__sub-link"
+                      >-play-state</a
+                    >
+                  </li>
+                  <li class="menu__sub-item">
+                    <a href="#animation-delay" class="menu__sub-link">-delay</a>
+                  </li>
+                  <li class="menu__sub-item">
+                    <a href="#animation-fill-mode" class="menu__sub-link"
+                      >-fill-mode</a
+                    >
+                  </li>
+                  <li class="menu__sub-item">
+                    <a
+                      href="#animation-universal-function"
+                      class="menu__sub-link"
+                      >-universal function</a
+                    >
+                  </li>
+                  <li class="menu__sub-item">
+                    <a href="#animation-practice" class="menu__sub-link"
+                      >-practice</a
+                    >
+                  </li>
+                </ul>
+              </li>
+            </ul>
+          </nav>
+        </div>
+      </header>
+      <main class="page">
+        <section id="transition" class="page__transition transition">
+          <div class="transition__container">
+            <h2 class="transition__title title">transition</h2>
+            <div class="transition__info">
+              CSS – переходи чи CSS – transitions можуть застосовуватися всім
+              елементам і навіть до псевдоэлементам. Використовуються для
+              пожвавлення нашої верстки. Що, у свою чергу, призводить до
+              поліпшення взаємодії з користувачем, як правило шляхом приємної
+              анімованої реакції на його дії. Наприклад – наведення та
+              натискання на кнопку. Також властивості transition можна
+              використовувати для побудови нескладних сценаріїв анімації.
+              Фактично, CSS – переходи забезпечують зміну значень інших
+              властивостей із певною анімацією та сценарієм.
+            </div>
+            <div id="transition-duration" class="transition__duration duration">
+              <h3 class="duration__title title-2">transition-duration</h3>
+              <div class="duration__text text">
+                Визначає проміжок часу, протягом якого має здійснюватись
+                перехід. Власне - тут ми вказуємо час за який одне значення
+                якості переходить (анімується) в інше. Властивість не
+                успадковується.
+              </div>
+              <div class="duration__items items">
+                <div class="duration__box-item box-item">
+                  <div class="duration__item duration__item--1 item">
+                    <span class="duration__text-item text-item"
+                      >Значення за замовчуванням</span
+                    >
+                    transition-duration: 0;
+                    <span
+                      class="duration__element-item duration__element-item--1 element-item"
+                    ></span>
+                  </div>
+                </div>
+                <div class="duration__box-item box-item">
+                  <div class="duration__item duration__item--2 item">
+                    transition-duration: 0.3s;
+                    <span
+                      class="duration__element-item duration__element-item--2 element-item"
+                    ></span>
+                  </div>
+                </div>
+                <div class="duration__box-item box-item">
+                  <div class="duration__item duration__item--3 item">
+                    transition-duration: 1s;
+                    <span
+                      class="duration__element-item duration__element-item--3 element-item"
+                    ></span>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div id="transition-property" class="transition__property property">
+              <h3 class="property__title title-2">transition-property</h3>
+              <div class="property__text text">
+                Містить назву CSS-властивостей, до яких буде використано ефект
+                переходу. Значення властивості може містити як одну властивість,
+                так і список властивостей через кому. Властивість не
+                успадковується.
+              </div>
+              <div class="property__items items">
+                <div class="property__box-item box-item">
+                  <div class="property__item property__item--1 item">
+                    <span class="property__text-item text-item"
+                      >Значення за замовчуванням</span
+                    >
+                    transition-property: all;
+                    <span
+                      class="property__element-item property__element-item--1 element-item"
+                    ></span>
+                  </div>
+                </div>
+                <div class="property__box-item box-item">
+                  <div class="property__item property__item--2 item">
+                    transition-property:color;
+                    <span
+                      class="property__element-item property__element-item--2 element-item"
+                    ></span>
+                  </div>
+                </div>
+                <div class="property__box-item box-item">
+                  <div class="property__item property__item--3 item">
+                    transition-property: transform;
+                    <span
+                      class="property__element-item property__element-item--3 element-item"
+                    ></span>
+                  </div>
+                </div>
+                <div class="property__box-item box-item">
+                  <div class="property__item property__item--4 item">
+                    transition-property: transform, color;
+                    <span
+                      class="property__element-item property__element-item--4 element-item"
+                    ></span>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div id="transition-delay" class="transition__delay delay">
+              <h3 class="delay__title title-2">transition-delay</h3>
+              <div class="delay__text text">
+                Затримка виконання переходу. Дозволяє зробити так, щоб зміна
+                якості відбувалася не миттєво, а з деякою затримкою. Час
+                затримки переходу вказується у секундах або мілісекундах.
+                Властивість не успадковується.
+              </div>
+              <div class="delay__items items">
+                <div class="delay__box-item box-item">
+                  <div class="delay__item delay__item--1 item">
+                    <span class="delay__text-item text-item"
+                      >Значення за замовчуванням</span
+                    >
+                    transition-delay: 0s;
+                    <span
+                      class="delay__element-item delay__element-item--1 element-item"
+                    ></span>
+                  </div>
+                </div>
+                <div class="delay__box-item box-item">
+                  <div class="delay__item delay__item--2 item">
+                    transition-delay: 0.5s;
+                    <span
+                      class="delay__element-item delay__element-item--2 element-item"
+                    ></span>
+                  </div>
+                </div>
+                <div class="delay__box-item box-item">
+                  <div class="delay__item delay__item--3 item">
+                    transition-delay: 2000ms;
+                    <span
+                      class="delay__element-item delay__element-item--3 element-item"
+                    ></span>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div
+              id="transition-timing-function"
+              class="transition__timing-function timing-function"
+            >
+              <h3 class="timing-function__title title-2">
+                transition-timing-function
+              </h3>
+              <div class="timing-function__text text">
+                Задає стиль нашого переходу, тобто якийсь сценарій, за яким
+                здійсняться анімація.
+              </div>
+              <div class="timing-function__items items">
+                <div class="timing-function__box-item box-item">
+                  <div
+                    class="timing-function__item timing-function__item--1 item"
+                  >
+                    <span class="timing-function__text-item text-item"
+                      >Значення за замовчуванням</span
+                    >
+                    transition-timing-function: ease;
+                    <span
+                      class="timing-function__element-item timing-function__element-item--3 element-item"
+                    ></span>
+                  </div>
+                </div>
+                <div class="timing-function__box-item box-item">
+                  <div
+                    class="timing-function__item timing-function__item--2 item"
+                  >
+                    transition-timing-function: linear;
+                    <span
+                      class="timing-function__element-item timing-function__element-item--3 element-item"
+                    ></span>
+                  </div>
+                </div>
+                <div class="timing-function__box-item box-item">
+                  <div
+                    class="timing-function__item timing-function__item--3 item"
+                  >
+                    transition-timing-function: ease-in;
+                    <span
+                      class="timing-function__element-item timing-function__element-item--3 element-item"
+                    ></span>
+                  </div>
+                </div>
+                <div class="timing-function__box-item box-item">
+                  <div
+                    class="timing-function__item timing-function__item--4 item"
+                  >
+                    transition-timing-function: ease-out;
+                    <span
+                      class="timing-function__element-item timing-function__element-item--3 element-item"
+                    ></span>
+                  </div>
+                </div>
+                <div class="timing-function__box-item box-item">
+                  <div
+                    class="timing-function__item timing-function__item--5 item"
+                  >
+                    transition-timing-function: cubic-bezier(0, 1.02, 0.31,
+                    0.45);
+                    <span
+                      class="timing-function__element-item timing-function__element-item--3 element-item"
+                    ></span>
+                  </div>
+                </div>
+                <div class="timing-function__box-item box-item">
+                  <div
+                    class="timing-function__item timing-function__item--6 item"
+                  >
+                    transition-timing-function: cubic-bezier(0.5, -0.26, 0.31,
+                    0.45);
+                    <span
+                      class="timing-function__element-item timing-function__element-item--3 element-item"
+                    ></span>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div
+              id="transition-universal-function"
+              class="transition__universal-function universal-function"
+            >
+              <h3 class="universal-function__title title-2">
+                transition-universal-function
+              </h3>
+              <div class="universal-function__text text">
+                Універсальний запис: transition: property duration
+                timing-function delay;
+              </div>
+              <div class="universal-function__items items">
+                <div class="universal-function__box-item box-item">
+                  <div
+                    class="universal-function__item universal-function__item--1 item"
+                  >
+                    <span class="universal-function__text-item text-item"
+                      >Значення за замовчуванням</span
+                    >
+                    transition: all 0s ease 0s;
+                    <span
+                      class="universal-function__element-item universal-function__element-item--1 element-item"
+                    ></span>
+                  </div>
+                </div>
+                <div class="universal-function__box-item box-item">
+                  <div
+                    class="universal-function__item universal-function__item--2 item"
+                  >
+                    transition: transform 0.6s linear 0.3s;
+                    <span
+                      class="universal-function__element-item universal-function__element-item--2 element-item"
+                    ></span>
+                  </div>
+                </div>
+                <div class="universal-function__box-item box-item">
+                  <div
+                    class="universal-function__item universal-function__item--3 item"
+                  >
+                    transition: transform 0.6s linear 0.3s, color 0.6s linear
+                    0s;
+                    <span
+                      class="universal-function__element-item universal-function__element-item--3 element-item"
+                    ></span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section id="animation" class="page__animation animation">
+          <div class="animation__container">
+            <h2 class="animation__title title">animation</h2>
+            <div class="animation__info">
+              Як і CSS властивість плавних переходів transition, про яку ми
+              говорили в попередньому уроці, властивість animation покликана
+              зробити нашу верстку динамічнішою, оживити її для кращої взаємодії
+              з користувачем та створення WOW ефекту. Але на відміну від CSS
+              переходів, створення анімації базується на ключових кадрах
+              @keyframes, які дозволяють автоматично відтворювати та повторювати
+              ефекти протягом заданого часу, а також зупиняти анімацію за певною
+              подією.
+            </div>
+            <div id="animation-name" class="animation__item">
+              <h3 class="animation__title-2 title-2">animation-name</h3>
+              <div class="animation__text text">
+                Визначає список анімацій (ключових кадрів), що застосовуються до
+                елемента. Можна вказати через кому. Причому пріоритет останній
+                запис.
+              </div>
+            </div>
+            <div id="animation-duration" class="animation__item">
+              <h3 class="animation__title-2 title-2">animation-duration</h3>
+              <div class="animation__text text">
+                Відповідає за тривалість анімації.
+              </div>
+            </div>
+            <div id="animation-timing-function" class="animation__item">
+              <h3 class="animation__title-2 title-2">
+                animation-timing-function
+              </h3>
+              <div class="animation__text text">
+                Встановлює сценарій розвитку анімації між ключовими кадрами.
+              </div>
+            </div>
+            <div id="animation-iteration-count" class="animation__item">
+              <h3 class="animation__title-2 title-2">
+                animation-iteration-count
+              </h3>
+              <div class="animation__text text">
+                Відповідає за повтор відтворення ключових кадрів.
+              </div>
+            </div>
+            <div id="animation-direction" class="animation__item">
+              <h3 class="animation__title-2 title-2">animation-direction</h3>
+              <div class="animation__text text">
+                Визначає напрямок та тип відтворення ключових кадрів.
+              </div>
+            </div>
+            <div id="animation-play-state" class="animation__item">
+              <h3 class="animation__title-2 title-2">animation-play-state</h3>
+              <div class="animation__text text">
+                Дозволяє запускати або зупиняти анімацію за подією.
+              </div>
+            </div>
+            <div id="animation-delay" class="animation__item">
+              <h3 class="animation__title-2 title-2">animation-delay</h3>
+              <div class="animation__text text">
+                Відповідає за затримку перед відтворенням.
+              </div>
+            </div>
+            <div id="animation-fill-mode" class="animation__item">
+              <h3 class="animation__title-2 title-2">animation-fill-mode</h3>
+              <div class="animation__text text">
+                Визначає, які значення анімованих css властивостей
+                застосовуються до об'єкта після завершення анімації.
+              </div>
+            </div>
+            <div id="animation-universal-function" class="animation__item">
+              <h3 class="animation__title-2 title-2">universal-function</h3>
+              <div class="animation__text text">
+                Універсальний запис animation
+              </div>
+            </div>
+            <div id="animation-practice" class="animation__practice">
+              <div class="animation__box box-animation">
+                <div class="box-animation__sector box-animation__sector--1">
+                  <span></span><span></span><span></span><span></span
+                  ><span></span><span></span><span></span><span></span
+                  ><span></span><span></span><span></span><span></span
+                  ><span></span><span></span><span></span><span></span>
+                </div>
+                <div class="box-animation__sector box-animation__sector--2">
+                  <span></span><span></span><span></span><span></span
+                  ><span></span><span></span><span></span><span></span
+                  ><span></span><span></span><span></span><span></span>
+                </div>
+                <div class="box-animation__sector box-animation__sector--3">
+                  <span></span><span></span><span></span><span></span
+                  ><span></span><span></span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+      </main>
+      <footer class="footer">footer</footer>
+    </div>
+    <script src="js/scroll.js"></script>
+  </body>
+</html>
