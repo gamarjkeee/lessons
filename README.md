@@ -19,3 +19,5 @@ lesson_11 - https://gamarjkeee.github.io/lessons/lesson_11
 lesson_12 - https://gamarjkeee.github.io/lessons/lesson_12
 
 lesson_13 - https://gamarjkeee.github.io/lessons/lesson_13
+
+lesson_14 - https://gamarjkeee.github.io/lessons/lesson_14
