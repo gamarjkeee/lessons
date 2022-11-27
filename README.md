@@ -23,3 +23,17 @@ lesson_13 - https://gamarjkeee.github.io/lessons/lesson_13
 lesson_14 - https://gamarjkeee.github.io/lessons/lesson_14
 
 lesson_15 - https://gamarjkeee.github.io/lessons/lesson_15
+
+lesson_16 - https://gamarjkeee.github.io/lessons/lesson_16
+
+lesson_17 - https://gamarjkeee.github.io/lessons/lesson_17
+
+lesson_18 - https://gamarjkeee.github.io/lessons/lesson_18
+
+lesson_19 - https://gamarjkeee.github.io/lessons/lesson_19
+
+lesson_20 - https://gamarjkeee.github.io/lessons/lesson_20
+
+lesson_21 - https://gamarjkeee.github.io/lessons/lesson_21
+
+lesson_22 - https://gamarjkeee.github.io/lessons/lesson_22
