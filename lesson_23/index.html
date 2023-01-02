@@ -1,1 +1,251 @@
-
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="shortcut icon" href="favicon.ico" />
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0"
+    />
+    <title>lesson_23 homework</title>
+  </head>
+  <body>
+    <div class="wrapper">
+      <header class="header">
+        <div class="header__container">Header</div>
+      </header>
+      <main class="page">
+        <div class="page__container">
+          <h1 class="page__title">Homework number 23</h1>
+          <div class="page__body body-page">
+            <div class="body-page__part part">
+              <h2 class="part__title">Частина перша</h2>
+              <div class="part__body">
+                <div class="part__image">
+                  <img src="img/1.jpg" alt="Image Part-1" />
+                </div>
+                <div class="part__content">
+                  <p>
+                    Варіант №1 неправильний. Оператор "+" не перетворює рядковий
+                    тип даних в числовий. Тому ми отримаємо лише об'єднання
+                    рядків.<span> Результат 35-22</span>
+                  </p>
+                  <p>
+                    Варіант №2 правильний. Все буде працювати коректно. Рядкові
+                    дані переведуться в числові. Далі дані буде помножено.
+                    <span>Результат 770</span>
+                  </p>
+                  <p>
+                    Варіант №3 неправильний. Відразу отримаємо помилку. Якщо
+                    записати як "22 + 1" - поверне "true"
+                  </p>
+                  <p>
+                    Варіант №4 неправильний. Якщо інкремент доданий не в
+                    префіксній формі. Тому поверне значення до додавання до
+                    нього одиниці. <span>Результат 0</span>
+                  </p>
+                  <p>
+                    Варіант №5 неправильний. Обидва варіанта повернуть "true".
+                    Тому програма поверне перше значення. В першому "або" обидва
+                    значення будуть "true". Але між ними &&. Тому програма
+                    поверне остання значення.
+                    <span>Результат 11</span>
+                  </p>
+                  <p>
+                    Варіант №6 неправильний. Змінній name присвоєно значення 0.
+                    Тому програма повене значення 0. Для того щоб повернелося
+                    "Без имени" - треба щоб значенням змінної були або null або
+                    undefined.
+                    <span>Результат 0</span>
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="body-page__part part">
+              <h2 class="part__title">Частина друга</h2>
+              <div class="part__body">
+                <div class="part__image">
+                  <img src="img/2.jpg" alt="Image Part-2" />
+                </div>
+                <div class="part__content">
+                  <p>
+                    Варіант №1 неправильний. При строгому порівнянні програма не
+                    зводить типи даних до одного. Тому якщо вони різні -
+                    автоматично отримаємо "false".
+                    <span>Результат "Ложь!"</span>
+                  </p>
+                  <p>
+                    Варіант №2 правильний. При нестрогому порівнянні програма
+                    зводить типи даних до одного (Якщо це можливо). Далі йде
+                    порівнняння. В даному випадку автоматично отримаємо "true",
+                    так як 5=5.
+                    <span>Результат "Истина!"</span>
+                  </p>
+                  <p>
+                    Варіант №3 правильний. При нестрогому порівнянні програма
+                    зводить типи даних до одного (Якщо це можливо). Далі йде
+                    порівнняння. В даному випадку отримаємо "true" в обох "І".
+                    <span>Результат "Истина!"</span>
+                  </p>
+                  <p>
+                    Варіант №4 правильний. Так як навіть пробіл в лапках це
+                    "true".
+                    <span>Результат "Истина!"</span>
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="body-page__part part">
+              <h2 class="part__title">Частина третя</h2>
+              <div class="part__body">
+                <div class="part__image">
+                  <img src="img/3.jpg" alt="Image Part-3" />
+                </div>
+                <div class="part__content">
+                  <p>
+                    Задача №1
+                    <span
+                      >for (let e = 0; e <і 6; e++) { console.log(e); }
+                    </span>
+                  </p>
+                  <p>
+                    Задача №2 неправильний. Останнім повернутим значенням буде
+                    "1", як тільки ми дійдемо до "0" цикл зупиниться так як нуль
+                    дасть "false".
+                    <span>Результат 8 7 6 5 4 3 2 1 </span>
+                  </p>
+                  <p>
+                    Задача №3
+                    <span>
+                      let num = 0; <br />
+                      while (num < 3) { <br />console.log(`Число ${num}`);
+                      num++; }
+                    </span>
+                  </p>
+                  <p>
+                    Задача №4 <br />
+                    <span>
+                      firstFor: for (let num = 0; num < 2; num++) {<br />
+                      for (let size = 0; size < 3; size++) { <br />
+                      console.log(size); <br />
+                      if (size == 1) break firstFor; <br />
+                      } }
+                    </span>
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="body-page__part part">
+              <h2 class="part__title">Частина четверта</h2>
+              <div class="part__body">
+                <div class="part__image">
+                  <img src="img/4.jpg" alt="Image Part-3" />
+                </div>
+                <div class="part__content">
+                  <p>
+                    Задача №1 <br />
+                    <span
+                      >let numOne = Math.round((1.005 + Number.EPSILON) * 100) /
+                      100; <br />
+                      console.log(numOne);
+                    </span>
+                  </p>
+                  <p>
+                    Задача №2 <br />
+                    <span>
+                      let value = "135.58px"; <br />
+                      console.log(parseFloat(value));
+                    </span>
+                  </p>
+                  <p>
+                    Задача №3 <br />
+                    <span>
+                      let value = 58 + "Фрилансер"; <br />
+                      if (isNaN(value)) { <br />
+                      console.log("Результат выражения NaN"); }
+                    </span>
+                  </p>
+                  <p>
+                    Задача №4 <br />
+                    <span>
+                      let maxValue = Math.max(10, 58, 39, -150, 0);<br />
+                      console.log(maxValue);
+                    </span>
+                  </p>
+                  <p>
+                    Задача №5<br />
+                    <span>
+                      let numTwo = 58.858;<br />
+                      console.log(Math.floor(numTwo));
+                    </span>
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="body-page__part part">
+              <h2 class="part__title">Частина п'ята</h2>
+              <div class="part__body">
+                <div class="part__image">
+                  <img src="img/5.jpg" alt="Image Part-3" />
+                </div>
+                <div class="part__content">
+                  <p>
+                    Задача №1 неправильно. Для використання змінних треба
+                    використовувати зворожні лапки, а не одинарні <br />
+                    <span> Результат: Привет Я ${fls}</span>
+                  </p>
+                  <p>
+                    Задача №2 <br />
+                    <span>
+                      let text = "фрилансер";<br />
+                      for (const char of text) { <br />
+                      if (char === "н") { <br />
+                      console.log(char); } }
+                    </span>
+                    <br />
+                    <span> Результат: н</span>
+                  </p>
+                  <p>
+                    Задача №3 неправильно. Програма додасть строки 123 та 456
+                    <br />
+                    <span> Результат: 123456</span>
+                  </p>
+                  <p>
+                    Задача №4.
+                    <br />
+                    <span>
+                      let text = "фрилансер"; <br />
+                      console.log(text.toLocaleUpperCase());
+                    </span>
+                    <br />
+                    <span> Результат: ФРИЛАНСЕР</span>
+                  </p>
+                  <p>
+                    Задача №5.
+                    <br />
+                    <span>
+                      let text = "фрилансер"; <br />
+                      console.log(text.slice(3, 6));
+                    </span>
+                    <br />
+                    <span> Результат: лан</span>
+                  </p>
+                  <p>
+                    Задача №6 неправильно. В JS рахуємо не з 1, а з 0. Тому щоб
+                    результат став "true" треба зробити запит
+                    console.log(text.includes("лан", 3));<br />
+                    <span> Результат: false</span>
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </main>
+      <footer class="footer">Footer</footer>
+    </div>
+    <script src="js/script.js"></script>
+  </body>
+</html>

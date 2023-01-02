@@ -1,0 +1,248 @@
+// ==============================================
+
+@import "_null";
+@import url("https://fonts.googleapis.com/css?family=Titillium+Web:regular,700,900&display=swap");
+
+// ==============================================
+
+html,
+body {
+  min-width: 320px;
+  font-family: "Titillium Web", sans-serif;
+}
+
+// ==============================================
+
+body {
+  height: 100%;
+  color: #000000;
+}
+
+// ==============================================
+
+.wrapper {
+  position: relative;
+  min-height: 100%;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+}
+
+// ==============================================
+
+[class*="__container"] {
+  max-width: 1230px;
+  margin: 0 auto;
+  padding: 0 15px;
+}
+
+// ==============================================
+
+.page {
+  flex: 1 1 auto;
+}
+
+// ==============================================
+
+.header {
+  padding: 20px;
+  background-color: #f7df1e;
+  &__container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    font-size: 25px;
+    font-weight: 700;
+    letter-spacing: 5px;
+  }
+}
+
+// ==============================================
+
+.page {
+  padding-top: 50px;
+  padding-bottom: 50px;
+  &__container {
+    display: flex;
+    flex-direction: column;
+    row-gap: 50px;
+  }
+
+  &__title {
+    font-size: 60px;
+    text-align: center;
+  }
+
+  &__body {
+  }
+}
+.body-page {
+  display: flex;
+  flex-direction: column;
+  row-gap: 75px;
+  &__part {
+  }
+}
+.part {
+  display: flex;
+  flex-direction: column;
+  row-gap: 25px;
+  &__title {
+    font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serifs;
+    font-size: 30px;
+    text-align: center;
+    background-color: #f7df1e;
+    padding-top: 10px;
+    padding-bottom: 10px;
+  }
+
+  &__body {
+    display: flex;
+    background-color: #f7df1e;
+    border: 3px solid #f7df1e;
+    @media (max-width: 991.98px) {
+      flex-direction: column;
+    }
+  }
+
+  &__image {
+    align-self: center;
+    flex: 0 1 45%;
+    min-width: 481.047px;
+    max-width: 540px;
+    @media (max-width: 991.98px) {
+      min-width: 280px;
+    }
+    & img {
+      width: 100%;
+    }
+  }
+
+  &__content {
+    align-self: center;
+    flex: 0 1 55%;
+    padding: 20px;
+    background-color: #f7df1e;
+    font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serifs;
+    display: flex;
+    flex-direction: column;
+    row-gap: 15px;
+    @media (max-width: 570px) {
+      padding: 20px 5px;
+    }
+    & p {
+      font-size: 20px;
+      line-height: 1.5;
+      position: relative;
+      padding-left: 30px;
+      & span {
+        font-weight: 700;
+      }
+      @media (max-width: 991.98px) {
+        font-size: 17.5px;
+      }
+      @media (max-width: 375px) {
+        font-size: 15px;
+      }
+      &::before {
+        content: "";
+        position: absolute;
+        top: 3px;
+        left: 0;
+        width: 25px;
+        height: 25px;
+        background: url("../img/correct.svg") center no-repeat;
+        background-size: cover;
+      }
+      &:nth-child(1)::before {
+        background: url("../img/error.svg") center no-repeat;
+        background-size: cover;
+      }
+      &:nth-child(3)::before {
+        background: url("../img/error.svg") center no-repeat;
+        background-size: cover;
+      }
+      &:nth-child(4)::before {
+        background: url("../img/error.svg") center no-repeat;
+        background-size: cover;
+      }
+      &:nth-child(5)::before {
+        background: url("../img/error.svg") center no-repeat;
+        background-size: cover;
+      }
+      &:nth-child(6)::before {
+        background: url("../img/error.svg") center no-repeat;
+        background-size: cover;
+      }
+    }
+  }
+  &:nth-child(2) .part__content p:nth-child(1)::before {
+    background: url("../img/error.svg") center no-repeat;
+    background-size: cover;
+  }
+  &:nth-child(2) .part__content p:nth-child(3)::before {
+    background: url("../img/correct.svg") center no-repeat;
+    background-size: cover;
+  }
+  &:nth-child(2) .part__content p:nth-child(4)::before {
+    background: url("../img/correct.svg") center no-repeat;
+    background-size: cover;
+  }
+  &:nth-child(3) .part__content p:nth-child(1)::before {
+    background: url("../img/correct.svg") center no-repeat;
+    background-size: cover;
+  }
+  &:nth-child(3) .part__content p:nth-child(2)::before {
+    background: url("../img/error.svg") center no-repeat;
+    background-size: cover;
+  }
+  &:nth-child(3) .part__content p:nth-child(3)::before {
+    background: url("../img/correct.svg") center no-repeat;
+    background-size: cover;
+  }
+  &:nth-child(3) .part__content p:nth-child(4)::before {
+    background: url("../img/correct.svg") center no-repeat;
+    background-size: cover;
+  }
+  &:nth-child(4) .part__content p:nth-child(1)::before {
+    background: url("../img/correct.svg") center no-repeat;
+    background-size: cover;
+  }
+  &:nth-child(4) .part__content p:nth-child(3)::before {
+    background: url("../img/correct.svg") center no-repeat;
+    background-size: cover;
+  }
+  &:nth-child(4) .part__content p:nth-child(4)::before {
+    background: url("../img/correct.svg") center no-repeat;
+    background-size: cover;
+  }
+  &:nth-child(4) .part__content p:nth-child(5)::before {
+    background: url("../img/correct.svg") center no-repeat;
+    background-size: cover;
+  }
+  &:nth-child(5) .part__content p:nth-child(4)::before {
+    background: url("../img/correct.svg") center no-repeat;
+    background-size: cover;
+  }
+  &:nth-child(5) .part__content p:nth-child(5)::before {
+    background: url("../img/correct.svg") center no-repeat;
+    background-size: cover;
+  }
+}
+
+// ==============================================
+
+.footer {
+  padding: 20px;
+  background-color: #f7df1e;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  font-size: 25px;
+  font-weight: 700;
+  letter-spacing: 5px;
+}
+
+// ==============================================
