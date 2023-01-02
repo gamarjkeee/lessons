@@ -37,3 +37,5 @@ lesson_20 - https://gamarjkeee.github.io/lessons/lesson_20
 lesson_21 - https://gamarjkeee.github.io/lessons/lesson_21
 
 lesson_22 - https://gamarjkeee.github.io/lessons/lesson_22
+
+lesson_22 - https://gamarjkeee.github.io/lessons/lesson_23
